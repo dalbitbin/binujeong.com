@@ -1,50 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard/dist/web/static/pretendard.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BinuJeong - Fan Archive</title>
+    <title>WOOBIN</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <h1>BinuJeong Fan Hub</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Discography</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Schedule</a></li>
-                <li><a href="#">Media</a></li>
-                <li><a href="#">Links</a></li>
+<section class="home">
+<div class ="home-overlay">
+
+    <!-- Video Background -->
+    <video autoplay muted loop playsinline class="home-video">
+        <source src="woobin-mv.mp4" type="video/webm">
+        <source src="woobin-mv.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Navbar stays on top of everything -->
+
+    <nav class="navbar hybrid-navbar px-4">
+    <div class="container-fluid d-flex align-items-center">
+
+        <!-- Logo on Left -->
+        <a class="navbar-brand hybrid-logo" href="#">
+          <img src="woobin-logo.svg" class="logo-img">
+        </a>
+        <!-- Spacer -->
+        <div class="flex-grow-1"></div>
+
+        <!-- Right Items -->
+        <div class="d-flex align-items-center gap-3">
+
+          <!-- Social icons -->
+
+            <a href="https://youtube.com/@woobin0401" target="_blank" class="nav-link p-0">
+              <i class="bi bi-youtube"></i>
+            </a>
+            <a href="https://instagram.com/binujeong" target="_blank" class="nav-link p-0">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@binujeong00" target="_blank" class="nav-link p-0">
+              <i class="bi bi-tiktok"></i>
+            </a>
+
+          <!-- Language -->
+          <div class="dropdown">
+            <a class="dropdown-toggle language-switch" href="#" data-bs-toggle="dropdown">KOR</a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">ENG</a></li>
             </ul>
-        </nav>
-    </header>
+          </div>
+          <!-- Hamburger -->
+          <button class="menu-toggle" data-bs-toggle="offcanvas" data-bs-target="#mainMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
 
-    <!-- Main content -->
-    <main>
-        <section id="welcome">
-            <h2>Welcome to the BinuJeong Archive</h2>
-            <p>This is a fan-run hub with all the information, projects, and updates about Jeong Woobin.</p>
-        </section>
 
-        <section id="latest-news">
-            <h2>Latest Updates</h2>
-            <ul>
-                <li>Update 1: Add a new MV link</li>
-                <li>Update 2: New schedule announced</li>
-                <li>Update 3: Upcoming project info</li>
-            </ul>
-        </section>
-    </main>
+    <!-- INSIDE HAMBURGER-->
+    <div class="offcanvas offcanvas-top full-menu" tabindex="-1" id="mainMenu">
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 BinuJeong Fan Archive | Not affiliated with Jeong Woobin or any agency</p>
-    </footer>
+      <!-- Custom Close Button (same position) -->
+      <button class="menu-close" type="button" data-bs-dismiss="offcanvas">
+        <span></span>
+        <span></span>
+      </button>
 
-    <script src="script.js"></script>
+
+      <div class="offcanvas-body d-flex flex-column justify-content-center align-items-center text-center">
+        <a href="#">PROFILE</a>
+        <a href="#">GALLERY</a>
+        <a href="#">DISCOGRAPHY</a>
+        <a href="#">VIDEO</a>
+        <a href="#">SCHEDULE</a>
+      </div>
+
+    </div>
+
+
+
+<div class="home-content">
+  <h1>싫더라</h1>
+  First Single Album
+</div>
+</div>
+
+</section>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

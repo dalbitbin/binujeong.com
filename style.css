@@ -1,44 +1,189 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #fdfdfd;
-    color: #333;
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont,
+               "Apple SD Gothic Neo", "Noto Sans KR",
+               "Malgun Gothic", sans-serif;
 }
 
-header {
-    background: #222;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+/* HOME HERO SECTION */
+.home {
+  position: relative;
+  height: 100vh;
+  overflow: hidden; /* ensures video doesn't overflow */
+  /* remove background-image since we'll use video */
 }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+/* Video background */
+.home-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* cover entire hero section */
+  z-index: 0;
 }
 
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
+/* Overlay for readability */
+.home-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0,0,0,0.55),
+    rgba(0,0,0,0.55)
+  );
+  z-index: 1;
 }
 
-main {
-    padding: 20px;
-    max-width: 900px;
-    margin: auto;
+.home-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;  /* pushes content to bottom */
+  align-items: center;
+  padding-bottom: 150px;       /* space above footer */
+  color: #fff;
+  letter-spacing: 0.15em;
+  text-align: center;
 }
 
-section {
-    margin-bottom: 40px;
+/* NAVBAR */
+.hybrid-logo img.logo-img {
+  height: 62px;
+  width: auto;
+  filter: brightness(1.2) contrast(1.2);
 }
 
-footer {
-    background: #222;
-    color: #fff;
-    text-align: center;
-    padding: 15px;
+@media (max-width: 768px) {
+  .hybrid-logo img.logo-img {
+    height: 36px;
+  }
+}
+
+.social-icon,
+.nav-link i {
+  width: 18px;
+  height: 18px;
+  font-size: 18px;
+  color: #fff;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.nav-link i:hover,
+.social-icon:hover {
+  transform: scale(1.2);
+  color: rgb(226, 226, 226);
+}
+
+/* Mobile adjustments */
+@media (max-width: 991px) {
+  .navbar-nav {
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 8px;
+  }
+
+  .nav-link {
+    padding: 4px 0;
+  }
+}
+
+
+/* Navbar */
+.hybrid-navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background: transparent;
+}
+
+/* Social icons */
+.hybrid-navbar i {
+  font-size: 18px;
+  color: #fff;
+  transition: 0.2s;
+}
+
+.hybrid-navbar i:hover {
+  transform: scale(1.2);
+}
+
+/* Language */
+.language-switch {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+/* Custom Hamburger */
+/* Hamburger stays top-right */
+.menu-toggle {
+  background: none;
+  border: none;
+  width: 28px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-toggle span {
+  height: 2px;
+  width: 100%;
+  background: #fff;
+}
+
+
+/* Close X inside offcanvas in same position */
+.menu-close {
+  position: absolute;
+  top: 20px;   /* same top spacing as navbar items */
+  right: 30px; /* same right spacing */
+  width: 28px;
+  height: 20px;
+  background: none;
+  border: none;
+}
+
+.menu-close span {
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+}
+
+.menu-close span:first-child {
+  transform: rotate(45deg);
+}
+
+.menu-close span:last-child {
+  transform: rotate(-45deg);
+}
+
+
+/* Fullscreen Offcanvas */
+.full-menu {
+  height: 100vh !important;
+  width: 100vw !important;
+  background: #000;
+  color: #fff;
+  border: none;
+}
+
+.full-menu a {
+  color: #fff;
+  font-size: 2rem;
+  margin: 20px 0;
+  letter-spacing: 0.15em;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.full-menu a:hover {
+  color: #ffc107;
 }
