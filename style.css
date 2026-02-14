@@ -107,11 +107,11 @@ body {
 
 /* Navbar */
 .hybrid-navbar {
-  position: relative;
+  position: fixed;
   z-index: 2000; /* higher than Bootstrap offcanvas */
   top: 0;
   width: 100%;
-
+  left: 0;
   background: transparent;
 }
 
@@ -187,11 +187,13 @@ body {
 
 /* Fullscreen Offcanvas */
 .full-menu {
+  position: fixed;
   height: 100vh !important;
   width: 100vw !important;
-  background: #303030;
+  background: #1d1d1d;
   color: #fff;
   border: none;
+  z-index: 1500;     /* below navbar if you want logo on top */
 }
 
 .full-menu a {
