@@ -7,7 +7,7 @@ body {
 /* HOME HERO SECTION */
 .home {
   position: relative;
-  height: 100vh;
+  height: 100dvh;
   overflow: hidden; /* ensures video doesn't overflow */
   /* remove background-image since we'll use video */
 }
@@ -36,6 +36,7 @@ body {
 
 .home-content {
   position: relative;
+  padding: 20px;
   z-index: 2;
   height: 100%;
   display: flex;
