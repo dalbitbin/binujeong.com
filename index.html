@@ -8,6 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WOOBIN</title>
+    <link rel="icon" type="image/png" href="assets/images/icon.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,8 +17,8 @@
 
     <!-- Video Background -->
     <video autoplay muted loop playsinline class="home-video" disablePictureInPicture>
-        <source src="woobin-mv.mp4" type="video/webm">
-        <source src="woobin-mv.mp4" type="video/mp4">
+        <source src="assets/video/woobin-mv.mp4" type="video/webm">
+        <source src="assets/video/woobin-mv.mp4" type="video/mp4">
     </video>
 
     <!-- Navbar stays on top of everything -->
@@ -27,7 +28,7 @@
 
         <!-- Logo on Left -->
         <a class="navbar-brand hybrid-logo" href="#">
-          <img src="woobin-logo.svg" class="logo-img">
+          <img src="assets/images/woobin-logo.svg" class="logo-img">
         </a>
         <!-- Spacer -->
         <div class="flex-grow-1"></div>
@@ -37,23 +38,23 @@
 
           <!-- Social icons -->
 
-            <a href="https://youtube.com/@woobin0401" target="_blank" class="nav-link p-0">
+            <a href="https://youtube.com/@woobin0401" target="_blank" class="nav-link p-0 m-3">
               <i class="bi bi-youtube"></i>
             </a>
-            <a href="https://instagram.com/binujeong" target="_blank" class="nav-link p-0">
+            <a href="https://instagram.com/binujeong" target="_blank" class="nav-link p-0 m-3">
               <i class="bi bi-instagram"></i>
             </a>
-            <a href="https://www.tiktok.com/@binujeong00" target="_blank" class="nav-link p-0">
+            <a href="https://www.tiktok.com/@binujeong00" target="_blank" class="nav-link p-0 m-3">
               <i class="bi bi-tiktok"></i>
             </a>
 
-          <!-- Language -->
+          <!-- Language 
           <div class="dropdown">
             <a class="dropdown-toggle language-switch" href="#" data-bs-toggle="dropdown">KOR</a>
             <ul class="dropdown-menu dropdown-menu-end">
               <li><a class="dropdown-item" href="#">ENG</a></li>
             </ul>
-          </div>
+          </div>-->
           <!-- Hamburger -->
           <button class="menu-toggle" data-bs-toggle="offcanvas" data-bs-target="#mainMenu">
             <span></span>
@@ -64,17 +65,8 @@
       </div>
     </nav>
 
-
     <!-- INSIDE HAMBURGER-->
     <div class="offcanvas offcanvas-top full-menu" tabindex="-1" id="mainMenu">
-
-      <!-- Custom Close Button (same position) -->
-      <button class="menu-close" type="button" data-bs-dismiss="offcanvas">
-        <span></span>
-        <span></span>
-      </button>
-
-
       <div class="offcanvas-body d-flex flex-column justify-content-center align-items-center text-center">
         <a href="#">PROFILE</a>
         <a href="#">GALLERY</a>
@@ -88,8 +80,10 @@
 
 
 <div class="home-content">
+  <a href="https://youtu.be/bvhLk0Hiu3A" target="_blank" rel="noopener noreferrer">
   <h1>싫더라</h1>
   First Single Album
+  </a>
 </div>
 </div>
 
@@ -97,6 +91,19 @@
 
 <script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const offcanvas = document.getElementById('mainMenu');
+
+  offcanvas.addEventListener('show.bs.offcanvas', () => {
+    menuToggle.classList.add('active');
+  });
+
+  offcanvas.addEventListener('hide.bs.offcanvas', () => {
+    menuToggle.classList.remove('active');
+  });
+</script>
+
 
 </body>
 </html>
