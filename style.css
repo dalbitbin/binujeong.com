@@ -107,7 +107,7 @@ body {
 
 /* Navbar */
 .hybrid-navbar {
-    position: relative;
+  position: relative;
   z-index: 2000; /* higher than Bootstrap offcanvas */
   top: 0;
   width: 100%;
@@ -196,13 +196,14 @@ body {
 
 .full-menu a {
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 20px 0;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.30em;
   text-decoration: none;
   transition: color 0.3s ease;
+  font-weight: bolder;
 }
 
 .full-menu a:hover {
-  color: #ffc107;
+  color: #5f2670;
 }
