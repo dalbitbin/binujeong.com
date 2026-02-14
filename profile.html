@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title -->
+  <title>WOOBIN : Profile</title>
+  <link rel="icon" type="image/png" href="assets/images/icon.png">
+
+  <!-- Styles -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard/dist/web/static/pretendard.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar hybrid-navbar px-4">
+    <div class="container-fluid d-flex align-items-center">
+
+      <!-- Logo -->
+      <a class="navbar-brand hybrid-logo" href="index.html">
+        <img src="assets/images/woobin-logo.svg" class="logo-img" alt="WOOBIN Logo">
+      </a>
+
+      <div class="flex-grow-1"></div>
+
+      <!-- Desktop Social Icons -->
+      <div class="d-none d-md-flex align-items-center gap-3 me-4">
+        <a href="https://youtube.com/@woobin0401" target="_blank" class="nav-link p-0 m-2">
+          <i class="bi bi-youtube"></i>
+        </a>
+        <a href="https://instagram.com/binujeong" target="_blank" class="nav-link p-0 m-2">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@binujeong00" target="_blank" class="nav-link p-0 m-2">
+          <i class="bi bi-tiktok"></i>
+        </a>
+      </div>
+
+      <!-- Hamburger -->
+      <button class="menu-toggle m-2"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#mainMenu"
+              aria-controls="mainMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </nav>
+
+
+  <!-- ================= OFFCANVAS MENU ================= -->
+  <div class="offcanvas offcanvas-top full-menu"
+       tabindex="-1"
+       id="mainMenu">
+
+    <div class="offcanvas-body d-flex flex-column justify-content-center align-items-center text-center">
+
+      <!-- Menu Links -->
+      <a href="profile.html">PROFILE</a>
+      <a href="#">GALLERY</a>
+      <a href="#">DISCOGRAPHY</a>
+      <a href="#">VIDEO</a>
+      <a href="#">SCHEDULE</a>
+
+      <!-- Mobile Social Icons -->
+      <div class="d-flex d-md-none justify-content-center gap-3 mt-4">
+        <a href="https://youtube.com/@woobin0401" target="_blank" class="nav-link p-0">
+          <i class="bi bi-youtube"></i>
+        </a>
+        <a href="https://instagram.com/binujeong" target="_blank" class="nav-link p-0">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@binujeong00" target="_blank" class="nav-link p-0">
+          <i class="bi bi-tiktok"></i>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ================= PROFILE SECTION ================= -->
+<section class="profile-section py-5">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <!-- Left: Square Image -->
+      <div class="col-md-5 text-center">
+        <div class="profile-image-wrapper">
+          <img src="assets/images/profile.png" 
+               alt="WOOBIN Profile" 
+               class="img-fluid profile-image">
+        </div>
+      </div>
+
+      <!-- Right: Text Content -->
+      <div class="col-md-7">
+        <h1 class="profile-name">WOOBIN <span class ="kr-name">우빈</span></h1>
+        <div class="profile-divider"></div>
+
+        <p class="profile-description">
+          South Korean singer-songwriter known for emotional vocals and 
+          cinematic storytelling. Debuted in 2023 and continues to expand 
+          his musical spectrum through live performances and digital releases.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- ================= SCRIPTS ================= -->
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const offcanvas = document.getElementById('mainMenu');
+
+    if (menuToggle && offcanvas) {
+      offcanvas.addEventListener('show.bs.offcanvas', () => {
+        menuToggle.classList.add('active');
+      });
+
+      offcanvas.addEventListener('hide.bs.offcanvas', () => {
+        menuToggle.classList.remove('active');
+      });
+    }
+  </script>
+
+</body>
+</html>

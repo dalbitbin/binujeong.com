@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard/dist/web/static/pretendard.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
@@ -11,85 +11,96 @@
     <link rel="icon" type="image/png" href="assets/images/icon.png">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<section class="home">
-<div class ="home-overlay">
 
-    <!-- Video Background -->
-    <video autoplay muted loop playsinline class="home-video" poster="photo.png" disablePictureInPicture>
-        <source src="assets/video/woobin-mv.webm" type="video/webm">
-    </video>
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar hybrid-navbar px-4">
+  <div class="container-fluid d-flex align-items-center">
 
-    <!-- Navbar stays on top of everything -->
+    <!-- Logo -->
+    <a class="navbar-brand hybrid-logo" href="index.html">
+      <img src="assets/images/woobin-logo.svg" class="logo-img">
+    </a>
 
-    <nav class="navbar hybrid-navbar px-4">
-    <div class="container-fluid d-flex align-items-center">
+    <div class="flex-grow-1"></div>
 
-        <!-- Logo on Left -->
-        <a class="navbar-brand hybrid-logo" href="#">
-          <img src="assets/images/woobin-logo.svg" class="logo-img">
-        </a>
-        <!-- Spacer -->
-        <div class="flex-grow-1"></div>
-
-        <!-- Right Items -->
-        <div class="d-flex align-items-center gap-3">
-
-          <!-- Social icons -->
-
-            <a href="https://youtube.com/@woobin0401" target="_blank" class="nav-link p-0 m-2">
-              <i class="bi bi-youtube"></i>
-            </a>
-            <a href="https://instagram.com/binujeong" target="_blank" class="nav-link p-0 m-2">
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a href="https://www.tiktok.com/@binujeong00" target="_blank" class="nav-link p-0 m-2">
-              <i class="bi bi-tiktok"></i>
-            </a>
-
-          <!-- Language 
-          <div class="dropdown">
-            <a class="dropdown-toggle language-switch" href="#" data-bs-toggle="dropdown">KOR</a>
-            <ul class="dropdown-menu dropdown-menu-end">
-              <li><a class="dropdown-item" href="#">ENG</a></li>
-            </ul>
-          </div>-->
-          <!-- Hamburger -->
-          <button class="menu-toggle" data-bs-toggle="offcanvas" data-bs-target="#mainMenu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-      </div>
-    </nav>
-
-    <!-- INSIDE HAMBURGER-->
-    <div class="offcanvas offcanvas-top full-menu" tabindex="-1" id="mainMenu">
-      <div class="offcanvas-body d-flex flex-column justify-content-center align-items-center text-center">
-        <a href="#">PROFILE</a>
-        <a href="#">GALLERY</a>
-        <a href="#">DISCOGRAPHY</a>
-        <a href="#">VIDEO</a>
-        <a href="#">SCHEDULE</a>
-      </div>
-
+    <!-- Desktop Social -->
+    <div class="d-none d-md-flex align-items-center gap-3 me-4">
+      <a href="https://youtube.com/@woobin0401" target="_blank" class="nav-link p-0 m-2">
+        <i class="bi bi-youtube"></i>
+      </a>
+      <a href="https://instagram.com/binujeong" target="_blank" class="nav-link p-0 m-2">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="https://www.tiktok.com/@binujeong00" target="_blank" class="nav-link p-0 m-2">
+        <i class="bi bi-tiktok"></i>
+      </a>
     </div>
 
+    <!-- Hamburger -->
+    <button class="menu-toggle m-2"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mainMenu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
+  </div>
+</nav>
 
-<div class="home-content">
-  <a href="https://youtu.be/bvhLk0Hiu3A" target="_blank" rel="noopener noreferrer">
-  <h1>싫더라</h1>
-  First Single Album
-  </a>
+<!-- ================= OFFCANVAS ================= -->
+<div class="offcanvas offcanvas-top full-menu" tabindex="-1" id="mainMenu">
+  <div class="offcanvas-body d-flex flex-column justify-content-center align-items-center text-center">
+    <a href="profile.html">PROFILE</a>
+    <a href="#">GALLERY</a>
+    <a href="#">DISCOGRAPHY</a>
+    <a href="#">VIDEO</a>
+    <a href="#">SCHEDULE</a>
+
+    <!-- Mobile Social -->
+    <div class="d-flex d-md-none justify-content-center gap-3 mt-4">
+      <a href="https://youtube.com/@woobin0401" target="_blank" class="nav-link p-0 m-2">
+        <i class="bi bi-youtube"></i>
+      </a>
+      <a href="https://instagram.com/binujeong" target="_blank" class="nav-link p-0 m-2">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="https://www.tiktok.com/@binujeong00" target="_blank" class="nav-link p-0 m-2">
+        <i class="bi bi-tiktok"></i>
+      </a>
+    </div>
+  </div>
 </div>
-</div>
 
+<!-- ================= HOME SECTION ================= -->
+<section class="home">
+  <div class="home-overlay">
+
+    <!-- Video -->
+    <video autoplay muted loop playsinline
+           class="home-video"
+           poster="photo.png"
+           disablePictureInPicture>
+      <source src="assets/video/woobin-mv.webm" type="video/webm">
+    </video>
+
+    <!-- Hero Content -->
+    <div class="home-content">
+      <a href="https://youtu.be/bvhLk0Hiu3A"
+         target="_blank"
+         rel="noopener noreferrer">
+        <h1>싫더라</h1>
+        First Single Album
+      </a>
+    </div>
+
+  </div>
 </section>
 
-<script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
 <script>
   const menuToggle = document.querySelector('.menu-toggle');
   const offcanvas = document.getElementById('mainMenu');
@@ -102,7 +113,6 @@
     menuToggle.classList.remove('active');
   });
 </script>
-
 
 </body>
 </html>

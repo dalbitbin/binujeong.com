@@ -2,6 +2,7 @@ body {
   font-family: "Pretendard", -apple-system, BlinkMacSystemFont,
                "Apple SD Gothic Neo", "Noto Sans KR",
                "Malgun Gothic", sans-serif;
+  background-color: #1b1b1b;
 }
 
 /* HOME HERO SECTION */
@@ -72,7 +73,7 @@ body {
 
 @media (max-width: 768px) {
   .hybrid-logo img.logo-img {
-    height: 36px;
+    height: 48px;
   }
 }
 
@@ -208,4 +209,49 @@ body {
 
 .full-menu a:hover {
   color: #5f2670;
+}
+
+/* PROFILE CSS */
+
+.profile-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  color:#cacaca;
+}
+
+.profile-image-wrapper {
+  aspect-ratio: 1 / 1; /* Keeps image square */
+  overflow: hidden;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-name {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.kr-name {
+  font-size: 1.5rem;
+  font-weight: 400;
+  vertical-align: middle;
+}
+
+.profile-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #cacaca;
+  margin: 20px 0;
+}
+
+.profile-description {
+  font-size: 1rem;
+  line-height: 1.8;
+  max-width: 500px;
 }
