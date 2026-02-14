@@ -116,6 +116,11 @@ body {
   background: transparent;
 }
 
+.other-page{
+  background: #1b1b1b;
+}
+
+
 /* Social icons */
 .hybrid-navbar i {
   font-size: 18px;
