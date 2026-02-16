@@ -24,15 +24,18 @@ body {
   z-index: 0;
 }
 
-/* Overlay for readability */
 .home-overlay {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh; /* covers top 10% of viewport */
   background: linear-gradient(
-    rgba(0,0,0,0.55),
-    rgba(0,0,0,0.55)
+    to bottom,
+    rgba(0, 0, 0, 0.6),  /* dark at very top */
+    rgba(0, 0, 0, 0)     /* fade to transparent */
   );
-  z-index: 1;
+  z-index: 1; /* above video, below content */
 }
 
 .home-content {
@@ -71,26 +74,12 @@ body {
   filter: brightness(1.2) contrast(1.2);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 978px) {
   .hybrid-logo img.logo-img {
     height: 48px;
   }
 }
 
-.social-icon,
-.nav-link i {
-  width: 18px;
-  height: 18px;
-  font-size: 18px;
-  color: #fff;
-  transition: transform 0.2s ease, color 0.2s ease;
-}
-
-.nav-link i:hover,
-.social-icon:hover {
-  transform: scale(1.2);
-  color: rgb(226, 226, 226);
-}
 
 /* Mobile adjustments */
 @media (max-width: 991px) {
@@ -104,6 +93,20 @@ body {
     padding: 4px 0;
   }
 }
+
+.nav-menu a {
+  text-decoration: none;
+  color: #fff; /* or your theme color */
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+  font-weight: 600;
+  transition: opacity 0.3s ease;
+}
+
+.nav-menu a:hover {
+  opacity: 0.6;
+}
+
 
 
 /* Navbar */
@@ -191,6 +194,8 @@ body {
 
 
 
+
+
 /* Fullscreen Offcanvas */
 .full-menu {
   position: fixed;
@@ -250,7 +255,7 @@ body {
 
 .profile-divider {
   width: 100%;
-  height: 1px;
+  height: 2px;
   background-color: #cacaca;
   margin: 20px 0;
 }
@@ -259,4 +264,34 @@ body {
   font-size: 1rem;
   line-height: 1.8;
   max-width: 500px;
+}
+
+/*--------- DISCOGRAPHY -------------*/
+.album-card-info {
+  font-size: 0.9rem;
+}
+
+.album-title-sm {
+  font-weight: 600;
+}
+
+.album-date-sm {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.7);
+}
+
+/* optional spacing for DISCOGRAPHY title */
+.discography-section {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+.discography-section h1 {
+  letter-spacing: 0.5rem;
+}
+
+
+
+
+.hidden {
+  display: none !important;
 }

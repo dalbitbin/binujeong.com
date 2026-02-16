@@ -13,7 +13,6 @@
 </head>
 
 <body>
-
 <!-- ================= NAVBAR ================= -->
 <nav class="navbar hybrid-navbar px-4">
   <div class="container-fluid d-flex align-items-center">
@@ -25,21 +24,18 @@
 
     <div class="flex-grow-1"></div>
 
-    <!-- Desktop Social -->
-    <div class="d-none d-md-flex align-items-center gap-3 me-4">
-      <a href="https://youtube.com/@woobin0401" target="_blank" class="nav-link p-0 m-2">
-        <i class="bi bi-youtube"></i>
-      </a>
-      <a href="https://instagram.com/binujeong" target="_blank" class="nav-link p-0 m-2">
-        <i class="bi bi-instagram"></i>
-      </a>
-      <a href="https://www.tiktok.com/@binujeong00" target="_blank" class="nav-link p-0 m-2">
-        <i class="bi bi-tiktok"></i>
-      </a>
+    <!-- Desktop Menu -->
+    <div class="nav-menu d-none d-md-flex align-items-center gap-5 me-5">
+      <a href="profile.html">PROFILE</a>
+      <a href="discography.html">DISCOGRAPHY</a>
+      <a href="gallery.html">GALLERY</a>
+      <a href="video.html">VIDEO</a>
+      <a href="schedule.html">SCHEDULE</a>
     </div>
 
-    <!-- Hamburger -->
-    <button class="menu-toggle m-2"
+    <!-- Mobile Hamburger -->
+    <button class="menu-toggle d-md-none"
+            type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#mainMenu">
       <span></span>
@@ -50,69 +46,66 @@
   </div>
 </nav>
 
+
 <!-- ================= OFFCANVAS ================= -->
-<div class="offcanvas offcanvas-top full-menu" tabindex="-1" id="mainMenu">
+ <div class="offcanvas offcanvas-top full-menu"
+     tabindex="-1"
+     id="mainMenu">
+
   <div class="offcanvas-body d-flex flex-column justify-content-center align-items-center text-center">
-    <a href="profile.html">PROFILE</a>
-    <a href="#">GALLERY</a>
-    <a href="#">DISCOGRAPHY</a>
-    <a href="#">VIDEO</a>
-    <a href="#">SCHEDULE</a>
+
+    <a href="profile.html" class="nav-link p-0">PROFILE</a>
+    <a href="discography.html">DISCOGRAPHY</a>
+    <a href="gallery.html">GALLERY</a>
+    <a href="video.html">VIDEO</a>
+    <a href="schedule.html">SCHEDULE</a>
 
     <!-- Mobile Social -->
-    <div class="d-flex d-md-none justify-content-center gap-3 mt-4">
-      <a href="https://youtube.com/@woobin0401" target="_blank" class="nav-link p-0 m-2">
+    <div class="d-flex justify-content-center gap-5">
+      <a href="https://youtube.com/@woobin0401" target="_blank">
         <i class="bi bi-youtube"></i>
       </a>
-      <a href="https://instagram.com/binujeong" target="_blank" class="nav-link p-0 m-2">
+      <a href="https://instagram.com/binujeong" target="_blank">
         <i class="bi bi-instagram"></i>
       </a>
-      <a href="https://www.tiktok.com/@binujeong00" target="_blank" class="nav-link p-0 m-2">
+      <a href="https://www.tiktok.com/@binujeong00" target="_blank">
         <i class="bi bi-tiktok"></i>
       </a>
     </div>
+
   </div>
 </div>
 
+
 <!-- ================= HOME SECTION ================= -->
 <section class="home">
-  <div class="home-overlay">
+  <!-- Video -->
+  <video autoplay muted loop playsinline
+         class="home-video"
+         poster="photo.png"
+         disablePictureInPicture>
+    <source src="assets/video/woobin-mv.webm" type="video/webm">
+  </video>
 
-    <!-- Video -->
-    <video autoplay muted loop playsinline
-           class="home-video"
-           poster="photo.png"
-           disablePictureInPicture>
-      <source src="assets/video/woobin-mv.webm" type="video/webm">
-    </video>
+  <!-- Overlay -->
+  <div class="home-overlay"></div>
 
-    <!-- Hero Content -->
-    <div class="home-content">
-      <a href="https://youtu.be/bvhLk0Hiu3A"
-         target="_blank"
-         rel="noopener noreferrer">
-        <h1>싫더라</h1>
-        First Single Album
-      </a>
-    </div>
-
+  <!-- Hero Content -->
+  <div class="home-content">
+    <a href="https://youtu.be/bvhLk0Hiu3A"
+       target="_blank"
+       rel="noopener noreferrer">
+      <h1>싫더라</h1>
+      First Single Album
+    </a>
   </div>
 </section>
 
+
+
+<!-- ================= SCRIPTS ================= -->
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script>
-<script>
-  const menuToggle = document.querySelector('.menu-toggle');
-  const offcanvas = document.getElementById('mainMenu');
-
-  offcanvas.addEventListener('show.bs.offcanvas', () => {
-    menuToggle.classList.add('active');
-  });
-
-  offcanvas.addEventListener('hide.bs.offcanvas', () => {
-    menuToggle.classList.remove('active');
-  });
-</script>
-
 </body>
 </html>
