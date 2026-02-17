@@ -74,15 +74,10 @@ body {
   filter: brightness(1.2) contrast(1.2);
 }
 
-@media (max-width: 978px) {
-  .hybrid-logo img.logo-img {
-    height: 48px;
-  }
-}
 
 
 /* Mobile adjustments */
-@media (max-width: 991px) {
+@media (max-width: 978px) {
   .navbar-nav {
     flex-direction: column;
     gap: 12px;
@@ -105,6 +100,7 @@ body {
 
 .nav-menu a:hover {
   opacity: 0.6;
+  scale: 110%;
 }
 
 
@@ -117,23 +113,35 @@ body {
   width: 100%;
   left: 0;
   background: transparent;
-}
-
-.other-page{
-  background: #1b1b1b;
-}
-
-
-/* Social icons */
-.hybrid-navbar i {
   font-size: 18px;
   color: #fff;
   transition: 0.2s;
 }
 
-.hybrid-navbar i:hover {
-  transform: scale(1.2);
+.hybrid-icons {
+  position: fixed;
+  left: 40px;          /* same spacing feel as navbar px-4 */
+  bottom: 40px;
+  gap: 18px;
+  z-index: 1500;
+
 }
+.hybrid-icons i {
+  font-size: 18px;
+  color: #fff;
+  transition: 0.2s;
+}
+
+.hybrid-icons a:hover {
+  opacity: 0.6;
+  scale: 110%;
+}
+
+
+.other-page{
+  background: #1b1b1b;
+}
+
 
 /* Language */
 .language-switch {
@@ -191,7 +199,6 @@ body {
   transform: rotate(-45deg);
   bottom: 9px;
 }
-
 
 
 
