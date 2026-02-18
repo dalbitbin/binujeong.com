@@ -254,6 +254,7 @@ html, body {
   font-size: 3rem;
   font-weight: 700;
   letter-spacing: 2px;
+  color:#fff;
 }
 
 .kr-name {
@@ -282,6 +283,18 @@ html, body {
   letter-spacing: 0.15rem;
 }
 
+.intro-date{
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.15rem;
+}
+.intro-date .album-date{
+  font-size: 0.8rem;
+  font-weight: 200;
+  color: #fff;
+  letter-spacing: 0.1rem;
+}
 /*--------- DISCOGRAPHY -------------*/
 
 .album-section{
@@ -326,7 +339,78 @@ html, body {
   font-weight: 600;
 }
 
+/*--------- GALLERY -------------*/
+.gallery-section{
+  padding-bottom:5%;
+}
 
+.gallery-section button{
+  letter-spacing: 0.2rem;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.gallery-section button:hover{
+  color:#fff;
+  background-color: transparent;
+}
+
+.gallery-section h1 {
+  letter-spacing: 0.5rem;
+  padding-top:10%;
+  font-weight: 700;
+}
+
+/* Gallery Grid */
+.gallery-card {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* ensures 1:1 square */
+  cursor: pointer;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fill the square nicely */
+  transition: transform 0.5s ease;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.1); /* zoom in image */
+}
+
+/* Carousel Images */
+#galleryCarousel .carousel-item img {
+  max-height: 85vh;
+  max-width: 786vh;
+  object-fit: contain;
+  margin: 0 auto;
+  background-color:none;
+}
+
+/* Optional: adjust carousel arrows outside */
+.carousel-control-prev, .carousel-control-next {
+  width: 10%;
+}
+
+/* Make the modal background transparent */
+#galleryModal .modal-content {
+  background-color: transparent; /* removes gray */
+  border: none; /* remove border too */
+  box-shadow: none;
+}
+
+/* Optional: modal body padding */
+#galleryModal .modal-body {
+  padding: 0;
+}
+
+/* Carousel arrows stay visible on transparent 
+#galleryCarousel .carousel-control-prev,
+#galleryCarousel .carousel-control-next {
+  filter: invert(1); /* inverts color if needed on dark bg */
 
 
 .hidden {

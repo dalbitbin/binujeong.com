@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title -->
+  <title>WOOBIN : Gallery</title>
+  <link rel="icon" type="image/png" href="assets/images/icon.png">
+
+  <!-- Styles -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard/dist/web/static/pretendard.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar hybrid-navbar px-4 other-page">
+  <div class="container-fluid d-flex align-items-center">
+
+    <!-- Logo -->
+    <a class="navbar-brand hybrid-logo" href="index.html">
+      <img src="assets/images/woobin-logo.svg" class="logo-img">
+    </a>
+
+    <div class="flex-grow-1"></div>
+
+    <!-- Desktop Menu -->
+    <div class="nav-menu d-none d-md-flex align-items-center gap-5 me-5">
+      <a href="profile.html">PROFILE</a>
+      <a href="discography.html">DISCOGRAPHY</a>
+      <a href="gallery.html">GALLERY</a>
+      <a href="video.html">VIDEO</a>
+      <a href="schedule.html">SCHEDULE</a>
+    </div>
+
+    <div class="hybrid-icons d-none d-lg-flex flex-column py-5 px-4">
+       <a href="https://youtube.com/@woobin0401" target="_blank">
+        <i class="bi bi-youtube"></i>
+      </a>
+      <a href="https://instagram.com/binujeong" target="_blank">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="https://www.tiktok.com/@binujeong00" target="_blank">
+        <i class="bi bi-tiktok"></i>
+      </a>
+    </div>
+
+    <!-- Mobile Hamburger -->
+    <button class="menu-toggle d-md-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mainMenu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+</nav>
+
+
+<!-- ================= OFFCANVAS ================= -->
+ <div class="offcanvas offcanvas-top full-menu"
+     tabindex="-1"
+     id="mainMenu">
+
+  <div class="offcanvas-body d-flex flex-column justify-content-center align-items-center text-center">
+
+    <a href="profile.html" class="nav-link p-0">PROFILE</a>
+    <a href="discography.html">DISCOGRAPHY</a>
+    <a href="gallery.html">GALLERY</a>
+    <a href="video.html">VIDEO</a>
+    <a href="schedule.html">SCHEDULE</a>
+
+    <!-- Mobile Social -->
+    <div class="d-flex justify-content-center gap-5">
+      <a href="https://youtube.com/@woobin0401" target="_blank">
+        <i class="bi bi-youtube"></i>
+      </a>
+      <a href="https://instagram.com/binujeong" target="_blank">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="https://www.tiktok.com/@binujeong00" target="_blank">
+        <i class="bi bi-tiktok"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ================= Gallery SECTION ================= -->
+<section class="gallery-section">
+  <div class="container">
+    <h1 class="text-white text-center mb-4">GALLERY</h1>
+    <br><br>
+
+    <!-- Gallery Grid -->
+    <div class="row g-3" id="gallery-grid"></div>
+
+    <!-- Pagination -->
+    <nav>
+      <ul class="pagination justify-content-center mt-3" id="gallery-pagination"></ul>
+    </nav>
+
+    <!-- Modal Carousel -->
+    <div class="modal fade" id="galleryModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-body p-0 position-relative">
+
+            <div id="galleryCarousel" class="carousel slide" data-bs-ride="false">
+              <div class="carousel-inner" id="carousel-inner"></div>
+
+              <!-- Carousel arrows outside -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+
+            <!-- Close button at bottom -->
+            <div class="text-center mt-5">
+              <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">CLOSE</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+</section>
+
+
+<!-- ================= SCRIPT ================= -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+<script src="gallery.js"></script>
+
+</body>
+</html>
