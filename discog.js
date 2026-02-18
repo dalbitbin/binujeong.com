@@ -20,7 +20,7 @@ fetch("discog.json")
     luminousAlbums.forEach(album => luminousGrid.appendChild(createAlbumCard(album)));
 
     // Set first album as default active
-    if (soloAlbums.length > 0) setActiveAlbum(soloAlbums[0]);
+    if (soloAlbums.length > 0) setActiveAlbum(soloAlbums[0], false);
   })
   .catch(err => console.error("Failed to load discography JSON:", err));
 
@@ -30,7 +30,7 @@ function createAlbumCard(album) {
   col.className = "col-6 col-md-3";
 
   col.innerHTML = `
-    <div class="album-card cursor-pointer">
+    <div class="album-card">
       <img src="assets/images/albums/${album.album_img}" class="img-fluid" alt="${album["title_" + currentLang]}">
       <div class="album-card-info d-flex justify-content-between mt-2 text-white">
         <span class="album-title-sm">${album["title_" + currentLang]}</span>
@@ -39,19 +39,23 @@ function createAlbumCard(album) {
     </div>
   `;
 
-  col.querySelector(".album-card").addEventListener("click", () => setActiveAlbum(album));
+  col.querySelector(".album-card").addEventListener("click", () => setActiveAlbum(album, true));
+
 
   return col;
 }
 
 // ===================== SET ACTIVE ALBUM =====================
-function setActiveAlbum(album) {
+function setActiveAlbum(album, shouldScroll = true) {
   activeAlbum.querySelector("img").src = `assets/images/albums/${album.album_img}`;
-  activeAlbum.querySelector(".album-date").textContent = `Release Date: ${album.date}`;
+  activeAlbum.querySelector(".album-date").textContent = album.date;
   activeAlbum.querySelector(".album-title").textContent = album["title_" + currentLang];
-  activeAlbum.querySelector(".album-type").textContent = album.type;
+  activeAlbum.querySelector(".album-type").textContent = album["artist_" + currentLang] + " " + " · " + album.type;
   activeAlbum.querySelector(".album-description").innerHTML = album["desc_" + currentLang];
   activeAlbum.querySelector(".album-tracklist").innerHTML = album["track_" + currentLang];
 
+  if (shouldScroll) {
   activeAlbum.scrollIntoView({ behavior: "smooth" });
+}
+
 }
