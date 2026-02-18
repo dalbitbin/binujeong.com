@@ -4,7 +4,6 @@ html, body {
                "Malgun Gothic", sans-serif;
   background-color: #1b1b1b;
   overflow-x: hidden;
-  padding-top:20px;
 }
 
 /* HOME HERO SECTION */
@@ -210,7 +209,7 @@ html, body {
   position: fixed;
   height: 100vh !important;
   width: 100vw !important;
-  background: #1d1d1d;
+  background: #1b1b1b;
   color: #fff;
   border: none;
   z-index: 1500;     /* below navbar if you want logo on top */
