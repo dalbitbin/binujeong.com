@@ -8,7 +8,7 @@
   <meta property="og:title" content="WOOBIN">
   <meta property="og:description" content="WOOBIN Website">
   <meta property="og:image" content="assets/images/card.png">
-  <meta property="og:url" content="https://dalbitbin.github.io/binujeong.com/gallery.html">
+  <meta property="og:url" content="https://dalbitbin.github.io/binujeong.com/video.html">
   <meta property="og:type" content="website">
 
   <meta name="twitter:card" content="summary_large_image">
@@ -17,7 +17,7 @@
   <meta name="twitter:image" content="assets/images/card.png">
 
   <!-- Title -->
-  <title>WOOBIN : Gallery</title>
+  <title>WOOBIN : Video </title>
   <link rel="icon" type="image/png" href="assets/images/icon.png">
 
   <!-- Styles -->
@@ -104,55 +104,116 @@
 </div>
 
 
-<!-- ================= Gallery SECTION ================= -->
-<section class="gallery-section">
+<!-- ================= DISCOGRAPHY SECTION ================= -->
+
+<section class="video-section">
   <div class="container">
-    <h1 class="text-white text-center mb-4">GALLERY</h1>
-    <br><br>
 
-    <!-- Gallery Grid -->
-    <div class="row gx-3 gy-0" id="gallery-grid"></div>
-
-    <!-- Pagination -->
-    <nav>
-      <ul class="pagination justify-content-center mt-3" id="gallery-pagination"></ul>
-    </nav>
-
-    <!-- Modal Carousel -->
-    <div class="modal fade" id="galleryModal" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered modal-xl">
-        <div class="modal-content">
-          <div class="modal-body p-0 position-relative">
-
-            <div id="galleryCarousel" class="carousel slide" data-bs-ride="false">
-              <div class="carousel-inner" id="carousel-inner"></div>
-
-              <!-- Carousel arrows outside -->
-              <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-              </button>
-            </div>
-
-            <!-- Close button at bottom -->
-            <div class="text-center mt-5">
-              <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">CLOSE</button>
-            </div>
-
-          </div>
-        </div>
+    <!-- Main Preview -->
+    <div class="row mb-5" id="video-active">
+      <div class="col-12">
+        <iframe id="active-video" width="100%" height="700" src="" 
+                title="Video preview" frameborder="0" allowfullscreen></iframe>
+        <h3 class="text-white mt-3" id="active-title"></h3>
+        <p class="text-white" id="active-desc"></p>
       </div>
     </div>
 
+    <h1 class="text-white text-center mb-4">VIDEO</h1>
+    <hr class="profile-divider mb-4">
+
+    <!-- Grid preview -->
+    <div class="row g-3" id="video-grid"></div>
+
+    <!-- Pagination (optional) -->
+    <ul class="pagination justify-content-center mt-4" id="video-pagination"></ul>
+  </div>
 </section>
 
 
 <!-- ================= SCRIPT ================= -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script>
-<script src="gallery.js"></script>
+<script>
+
+  const videoGrid = document.getElementById("video-grid");
+const activeVideo = document.getElementById("active-video");
+const activeTitle = document.getElementById("active-title");
+const activeDesc = document.getElementById("active-desc");
+const paginationEl = document.getElementById("video-pagination");
+
+let videoData = [];
+let currentPage = 1;
+const videosPerPage = 3;
+
+// Fetch video JSON
+fetch("video.json")
+  .then(res => res.json())
+  .then(data => {
+    videoData = data;
+    renderVideoPage();
+    if (videoData.length > 0) setActiveVideo(videoData[0]);
+    renderPagination();
+  })
+  .catch(err => console.error(err));
+
+// Render grid
+function renderVideoPage() {
+  videoGrid.innerHTML = "";
+  const start = (currentPage - 1) * videosPerPage;
+  const end = start + videosPerPage;
+  videoData.slice(start, end).forEach((video, index) => {
+    const col = document.createElement("div");
+    col.className = "col-12 col-md-4";
+    col.innerHTML = `
+      <div class="video-card cursor-pointer">
+        <img src="https://img.youtube.com/vi/${video.youtube_id}/hqdefault.jpg" 
+             class="img-fluid" alt="${video.title}">
+        <h5 class="text-white mt-2">${video.title}</h5>
+      </div>
+    `;
+    videoGrid.appendChild(col);
+
+    // Click updates main preview
+    col.querySelector("img").addEventListener("click", () => setActiveVideo(video));
+  });
+}
+
+// Set active video in main preview
+function setActiveVideo(video) {
+  activeVideo.src = `https://www.youtube.com/embed/${video.youtube_id}`;
+  activeTitle.textContent = video.title;
+  activeDesc.textContent = video.desc;
+}
+
+// Pagination
+function renderPagination() {
+  if (!paginationEl) return;
+  const totalPages = Math.ceil(videoData.length / videosPerPage);
+  if (totalPages <= 1) {
+    paginationEl.style.display = "none";
+    return;
+  }
+  paginationEl.innerHTML = "";
+  for (let i = 1; i <= totalPages; i++) {
+    const li = document.createElement("li");
+    li.className = `page-item ${i === currentPage ? "active" : ""}`;
+    const a = document.createElement("a");
+    a.className = "page-link";
+    a.href = "#";
+    a.textContent = i;
+    a.addEventListener("click", e => {
+      e.preventDefault();
+      currentPage = i;
+      renderVideoPage();
+      renderPagination();
+    });
+    li.appendChild(a);
+    paginationEl.appendChild(li);
+  }
+}
+
+</script>
 
 </body>
 </html>

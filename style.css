@@ -384,11 +384,12 @@ html, body {
 
 /* Carousel Images */
 #galleryCarousel .carousel-item img {
-  max-height: 85vh;
-  max-width: 786vh;
+  max-height: 75vh;
+  max-width: 700vh;
   object-fit: contain;
   margin: 0 auto;
   background-color:none;
+  z-index: 3000px;
 }
 
 /* Optional: adjust carousel arrows outside */
@@ -401,17 +402,25 @@ html, body {
   background-color: transparent; /* removes gray */
   border: none; /* remove border too */
   box-shadow: none;
+  z-index: 3000;
 }
 
 /* Optional: modal body padding */
 #galleryModal .modal-body {
   padding: 0;
+  z-index: 3000;
 }
 
-/* Carousel arrows stay visible on transparent 
-#galleryCarousel .carousel-control-prev,
-#galleryCarousel .carousel-control-next {
-  filter: invert(1); /* inverts color if needed on dark bg */
+/* =============== VIDEO ================ */
+
+.video-section{
+  padding-top:10%;
+}
+.video-section h1 {
+  letter-spacing: 0.5rem;
+  padding-top:10%;
+  font-weight: 700;
+}
 
 
 .hidden {
