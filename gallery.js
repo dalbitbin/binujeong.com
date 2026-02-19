@@ -1,33 +1,39 @@
+// ===================== SETTINGS =====================
 const galleryGrid = document.getElementById("gallery-grid");
-const paginationEl = document.getElementById("gallery-pagination");
 const carouselInner = document.getElementById("carousel-inner");
+const paginationEl = document.getElementById("gallery-pagination"); // optional
+const imagesPerPage = 16; // 4x4 grid
 
 let galleryData = [];
 let currentPage = 1;
-const perPage = 16;
-let totalPages = 1;
 
-// Fetch gallery JSON
+// ===================== FETCH JSON =====================
 fetch("gallery.json")
   .then(res => res.json())
   .then(data => {
     galleryData = data;
-    totalPages = Math.ceil(galleryData.length / perPage);
+    renderGalleryPage();
     populateCarousel();
-    renderGallery();
-    renderPagination();
+
+    // Hide pagination if all images fit on one page
+    const totalPages = Math.ceil(galleryData.length / imagesPerPage);
+    if (totalPages <= 1 && paginationEl) {
+      paginationEl.style.display = "none";
+    } else if (paginationEl) {
+      paginationEl.style.display = "flex";
+      renderPagination();
+    }
   })
-  .catch(err => console.error(err));
+  .catch(err => console.error("Failed to load gallery JSON:", err));
 
-// Render gallery grid for current page
-function renderGallery() {
+// ===================== RENDER GALLERY PAGE =====================
+function renderGalleryPage() {
   galleryGrid.innerHTML = "";
-  const start = (currentPage - 1) * perPage;
-  const end = start + perPage;
-
+  const start = (currentPage - 1) * imagesPerPage;
+  const end = start + imagesPerPage;
   galleryData.slice(start, end).forEach((item, index) => {
     const col = document.createElement("div");
-    col.className = "col-6 col-md-3 mb-3";
+    col.className = "col-6 col-md-3 mb-3"; // 4x4 grid
     col.innerHTML = `
       <div class="gallery-card">
         <img src="assets/images/gallery/${item.img}" class="img-fluid" alt="${item.caption}">
@@ -35,42 +41,47 @@ function renderGallery() {
     `;
     galleryGrid.appendChild(col);
 
-    // Click opens modal carousel at absolute index
+    // Open carousel at correct index
     col.querySelector("img").addEventListener("click", () => {
       const carousel = new bootstrap.Carousel(document.getElementById("galleryCarousel"));
-      carousel.to(start + index);
+      carousel.to(start + index); // absolute index in galleryData
       new bootstrap.Modal(document.getElementById("galleryModal")).show();
     });
   });
 }
 
-// Populate carousel with all images
+// ===================== POPULATE CAROUSEL =====================
 function populateCarousel() {
   carouselInner.innerHTML = "";
   galleryData.forEach((item, index) => {
     const carouselItem = document.createElement("div");
     carouselItem.className = `carousel-item${index === 0 ? " active" : ""}`;
-    carouselItem.innerHTML = `<img src="assets/images/gallery/${item.img}" class="d-block w-100" alt="${item.caption}">`;
+    carouselItem.innerHTML = `
+      <img src="assets/images/gallery/${item.img}" class="d-block w-100 gallery-carousel-img" alt="${item.caption}">
+    `;
     carouselInner.appendChild(carouselItem);
   });
 }
 
-// Render pagination
+// ===================== PAGINATION =====================
 function renderPagination() {
+  if (!paginationEl) return;
+
   paginationEl.innerHTML = "";
+  const totalPages = Math.ceil(galleryData.length / imagesPerPage);
 
   // << First
   paginationEl.appendChild(createPageButton("<<", 1, currentPage === 1));
   // < Prev
   paginationEl.appendChild(createPageButton("<", currentPage - 1, currentPage === 1));
 
-  // Numbered pages (2 on each side)
-  const range = 2;
-  let start = Math.max(1, currentPage - range);
-  let end = Math.min(totalPages, currentPage + range);
+  // Numbered pages
+  const pageRange = 2; // pages around current
+  let start = Math.max(1, currentPage - pageRange);
+  let end = Math.min(totalPages, currentPage + pageRange);
 
   for (let i = start; i <= end; i++) {
-    paginationEl.appendChild(createPageButton(i, i, currentPage === i, true));
+    paginationEl.appendChild(createPageButton(i, i, false, i === currentPage));
   }
 
   // > Next
@@ -79,19 +90,18 @@ function renderPagination() {
   paginationEl.appendChild(createPageButton(">>", totalPages, currentPage === totalPages));
 }
 
-// Create individual pagination button
-function createPageButton(label, page, disabled = false, isNumber = false) {
+function createPageButton(label, page, disabled = false, active = false) {
   const li = document.createElement("li");
-  li.className = "page-item" + (disabled ? " disabled" : "") + (isNumber && page === currentPage ? " active" : "");
+  li.className = "page-item" + (disabled ? " disabled" : "") + (active ? " active" : "");
   const a = document.createElement("a");
   a.className = "page-link";
   a.href = "#";
   a.textContent = label;
   a.addEventListener("click", e => {
     e.preventDefault();
-    if (!disabled && page >= 1 && page <= totalPages) {
+    if (!disabled && page >= 1 && page <= Math.ceil(galleryData.length / imagesPerPage)) {
       currentPage = page;
-      renderGallery();
+      renderGalleryPage();
       renderPagination();
     }
   });
