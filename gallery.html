@@ -119,32 +119,44 @@
     </nav>
 
     <!-- Modal Carousel -->
-    <div class="modal fade" id="galleryModal" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered modal-xl">
-        <div class="modal-content">
-          <div class="modal-body p-0 position-relative">
+<!-- ================= GALLERY MODAL ================= -->
+<div class="modal fade gallery-modal" id="galleryModal" tabindex="-1">
 
-            <div id="galleryCarousel" class="carousel slide" data-bs-ride="false">
-              <div class="carousel-inner" id="carousel-inner"></div>
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
 
-              <!-- Carousel arrows outside -->
-              <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-              </button>
-            </div>
+      <div class="modal-body">
 
-            <!-- Close button at bottom -->
-            <div class="text-center mt-5">
-              <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">CLOSE</button>
-            </div>
-
-          </div>
+        <!-- Carousel -->
+        <div id="galleryCarousel" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-inner" id="carousel-inner"></div>
         </div>
+
+        <!-- LEFT ARROW -->
+        <button class="gallery-arrow left"
+          data-bs-target="#galleryCarousel"
+          data-bs-slide="prev">
+          <i class="bi bi-chevron-left"></i>
+        </button>
+
+        <!-- RIGHT ARROW -->
+        <button class="gallery-arrow right"
+          data-bs-target="#galleryCarousel"
+          data-bs-slide="next">
+          <i class="bi bi-chevron-right"></i>
+        </button>
+
+        <!-- CLOSE BUTTON -->
+        <button
+          class="gallery-close"
+          data-bs-dismiss="modal">
+          CLOSE
+        </button>
+
       </div>
     </div>
+  </div>
+</div>
 
 </section>
 

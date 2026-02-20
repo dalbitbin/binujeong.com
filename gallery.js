@@ -108,3 +108,45 @@ function createPageButton(label, page, disabled = false, active = false) {
   li.appendChild(a);
   return li;
 }
+
+// ============================ NO SCROLL GALLERY ======================== //
+let scrollY = 0;
+
+const galleryModal = document.getElementById("galleryModal");
+
+galleryModal.addEventListener("show.bs.modal", () => {
+  scrollY = window.scrollY;
+
+  document.body.style.top = `-${scrollY}px`;
+  document.body.classList.add("modal-open");
+});
+
+galleryModal.addEventListener("hidden.bs.modal", () => {
+  document.body.classList.remove("modal-open");
+  document.body.style.top = "";
+
+  window.scrollTo(0, scrollY);
+});
+
+
+// ============================ modal ======================== //
+
+document.addEventListener("keydown", e => {
+
+  const modal = document.getElementById("galleryModal");
+  const isOpen = modal.classList.contains("show");
+
+  if (!isOpen) return;
+
+  const carousel =
+    bootstrap.Carousel.getInstance(
+      document.getElementById("galleryCarousel")
+    );
+
+  if (e.key === "ArrowRight") carousel.next();
+  if (e.key === "ArrowLeft") carousel.prev();
+
+  if (e.key === "Escape") {
+    bootstrap.Modal.getInstance(modal).hide();
+  }
+});
