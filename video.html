@@ -15,6 +15,7 @@
   <meta name="twitter:title" content="WOOBIN">
   <meta name="twitter:description" content="WOOBIN Website">
   <meta name="twitter:image" content="assets/images/card.png">
+  
 
   <!-- Title -->
   <title>WOOBIN : Video </title>
@@ -106,29 +107,45 @@
 
 <!-- ================= DISCOGRAPHY SECTION ================= -->
 
+<!-- ================= VIDEO SECTION ================= -->
 <section class="video-section">
   <div class="container">
+    
 
     <!-- Main Preview -->
-    <div class="row mb-5" id="video-active">
-      <div class="col-12">
-        <iframe id="active-video" width="100%" height="700" src="" 
-                title="Video preview" frameborder="0" allowfullscreen></iframe>
-        <h3 class="text-white mt-3" id="active-title"></h3>
-        <p class="text-white" id="active-desc"></p>
+    <div class="video-active mb-5" id="active-video">
+      <div class="video-active-frame">
+        <iframe
+          id="active-iframe"
+          src=""
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <div class="text-center mt-3">
+        <h2 class="video-title text-white mb-1" id="active-title"></h2>
+        <p class="video-date text-white-50 mb-0" id="active-date"></p>
       </div>
     </div>
 
     <h1 class="text-white text-center mb-4">VIDEO</h1>
-    <hr class="profile-divider mb-4">
+    <br><br>
 
-    <!-- Grid preview -->
-    <div class="row g-3" id="video-grid"></div>
+    <!-- SOLO -->
+    <h3 class="text-white mt-5 mb-3">WOOBIN <hr class = "profile-divider"></h3>
+    <div class="row g-4" id="solo-videos"></div>
+    <br><br>
+    <!-- LUMINOUS -->
+    <h3 class="text-white mt-5 mb-3">LUMINOUS <hr class = "profile-divider"></h3>
+    <div class="row g-4" id="luminous-videos"></div>
 
-    <!-- Pagination (optional) -->
-    <ul class="pagination justify-content-center mt-4" id="video-pagination"></ul>
   </div>
 </section>
+
+<script src="video.js"></script>
 
 
 <!-- ================= SCRIPT ================= -->
@@ -136,82 +153,98 @@
 <script src="script.js"></script>
 <script>
 
-  const videoGrid = document.getElementById("video-grid");
-const activeVideo = document.getElementById("active-video");
+const soloWrap = document.getElementById("solo-videos");
+const luminousWrap = document.getElementById("luminous-videos");
+
+const activeWrap = document.getElementById("active-video");
+const activeIframe = document.getElementById("active-iframe");
 const activeTitle = document.getElementById("active-title");
-const activeDesc = document.getElementById("active-desc");
-const paginationEl = document.getElementById("video-pagination");
+const activeDate = document.getElementById("active-date");
 
-let videoData = [];
-let currentPage = 1;
-const videosPerPage = 3;
-
-// Fetch video JSON
-fetch("video.json")
-  .then(res => res.json())
-  .then(data => {
-    videoData = data;
-    renderVideoPage();
-    if (videoData.length > 0) setActiveVideo(videoData[0]);
-    renderPagination();
-  })
-  .catch(err => console.error(err));
-
-// Render grid
-function renderVideoPage() {
-  videoGrid.innerHTML = "";
-  const start = (currentPage - 1) * videosPerPage;
-  const end = start + videosPerPage;
-  videoData.slice(start, end).forEach((video, index) => {
-    const col = document.createElement("div");
-    col.className = "col-12 col-md-4";
-    col.innerHTML = `
-      <div class="video-card cursor-pointer">
-        <img src="https://img.youtube.com/vi/${video.youtube_id}/hqdefault.jpg" 
-             class="img-fluid" alt="${video.title}">
-        <h5 class="text-white mt-2">${video.title}</h5>
-      </div>
-    `;
-    videoGrid.appendChild(col);
-
-    // Click updates main preview
-    col.querySelector("img").addEventListener("click", () => setActiveVideo(video));
-  });
+function ytThumb(id) {
+  // best effort: maxres may not exist for some vids, but still works on most
+  return `https://i.ytimg.com/vi/${id}/maxresdefault.jpg`;
 }
 
-// Set active video in main preview
-function setActiveVideo(video) {
-  activeVideo.src = `https://www.youtube.com/embed/${video.youtube_id}`;
+function ytEmbed(id) {
+  // modestbranding makes it feel cleaner; rel=0 reduces unrelated recs
+  return `https://www.youtube.com/embed/${id}?rel=0&modestbranding=1`;
+}
+
+function isMobile() {
+  return window.innerWidth <= 768;
+}
+
+function setActive(video) {
+  activeIframe.src = ytEmbed(video.youtube_id);
   activeTitle.textContent = video.title;
-  activeDesc.textContent = video.desc;
+  activeDate.textContent = video.date;
+  
+
+  // scroll to preview (account for fixed navbar)
+  const nav = document.querySelector(".hybrid-navbar");
+  const navH = nav ? nav.offsetHeight : 0;
+  const top = activeWrap.getBoundingClientRect().top + window.scrollY - navH - 16;
+
+  window.scrollTo({ top, behavior: "smooth" });
+  console.log("EMBED SRC:", ytEmbed(video.youtube_id), "RAW:", video.youtube_id);
 }
 
-// Pagination
-function renderPagination() {
-  if (!paginationEl) return;
-  const totalPages = Math.ceil(videoData.length / videosPerPage);
-  if (totalPages <= 1) {
-    paginationEl.style.display = "none";
-    return;
-  }
-  paginationEl.innerHTML = "";
-  for (let i = 1; i <= totalPages; i++) {
-    const li = document.createElement("li");
-    li.className = `page-item ${i === currentPage ? "active" : ""}`;
-    const a = document.createElement("a");
-    a.className = "page-link";
-    a.href = "#";
-    a.textContent = i;
-    a.addEventListener("click", e => {
-      e.preventDefault();
-      currentPage = i;
-      renderVideoPage();
-      renderPagination();
-    });
-    li.appendChild(a);
-    paginationEl.appendChild(li);
-  }
+function makeCard(video) {
+  const col = document.createElement("div");
+
+  // desktop: 3 columns max, mobile: full width list style
+  col.className = isMobile() ? "col-12" : "col-12 col-md-4";
+
+  const inner = document.createElement("div");
+  inner.className = "video-card";
+
+  // mobile list class
+  const wrapClass = isMobile() ? "video-list-item" : "";
+
+  inner.innerHTML = `
+    <div class="${wrapClass}">
+      <div class="video-thumb">
+        <img src="${ytThumb(video.youtube_id)}" alt="${video.title}">
+      </div>
+      <div class="mt-2 mt-md-2">
+        <div class="video-card-title text-white">${video.title}</div>
+        <div class="video-card-date">${video.date}</div>
+      </div>
+    </div>
+  `;
+
+  inner.addEventListener("click", () => setActive(video));
+
+  col.appendChild(inner);
+  return col;
 }
+
+function renderAll(videos) {
+  soloWrap.innerHTML = "";
+  luminousWrap.innerHTML = "";
+
+  const solo = videos.filter(v => v.group === "solo");
+  const luminous = videos.filter(v => v.group === "luminous");
+
+  solo.forEach(v => soloWrap.appendChild(makeCard(v)));
+  luminous.forEach(v => luminousWrap.appendChild(makeCard(v)));
+
+  // set first video as default (prefer solo first)
+  if (solo.length) setActive(solo[0]);
+  else if (luminous.length) setActive(luminous[0]);
+}
+
+// Fetch + render
+fetch("video.json")
+  .then(r => r.json())
+  .then(data => {
+    renderAll(data);
+
+    // re-render layout on resize so mobile/desktop card layout updates cleanly
+    window.addEventListener("resize", () => renderAll(data));
+  })
+  .catch(err => console.error("Failed to load video.json:", err));
 
 </script>
 

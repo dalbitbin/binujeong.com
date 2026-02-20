@@ -43,12 +43,31 @@ function renderGalleryPage() {
 
     // Open carousel at correct index
     col.querySelector("img").addEventListener("click", () => {
-      const carousel = new bootstrap.Carousel(document.getElementById("galleryCarousel"));
-      carousel.to(start + index); // absolute index in galleryData
-      new bootstrap.Modal(document.getElementById("galleryModal")).show();
+
+      if (window.innerWidth <= 768) {
+        // MOBILE VIEWER
+        const img = document.getElementById("mobileImageView");
+        img.src = `assets/images/gallery/${item.img}`;
+
+        new bootstrap.Modal(
+          document.getElementById("mobileImageModal")
+        ).show();
+
+      } else {
+        // DESKTOP CAROUSEL
+        const carousel = new bootstrap.Carousel(
+          document.getElementById("galleryCarousel")
+        );
+
+        carousel.to(start + index);
+
+        new bootstrap.Modal(
+          document.getElementById("galleryModal")
+        ).show();
+      }
     });
-  });
-}
+   }); // <-- close forEach
+   } // <-- close forEach
 
 // ===================== POPULATE CAROUSEL =====================
 function populateCarousel() {
@@ -131,22 +150,32 @@ galleryModal.addEventListener("hidden.bs.modal", () => {
 
 // ============================ modal ======================== //
 
-document.addEventListener("keydown", e => {
+document.addEventListener("keydown", function (e) {
 
   const modal = document.getElementById("galleryModal");
   const isOpen = modal.classList.contains("show");
 
   if (!isOpen) return;
 
-  const carousel =
-    bootstrap.Carousel.getInstance(
-      document.getElementById("galleryCarousel")
-    );
+  const carouselEl = document.getElementById("galleryCarousel");
+  const carousel = bootstrap.Carousel.getInstance(carouselEl);
 
-  if (e.key === "ArrowRight") carousel.next();
-  if (e.key === "ArrowLeft") carousel.prev();
+  if (!carousel) return;
+
+  if (e.key === "ArrowRight") {
+    carousel.next();
+  }
+
+  if (e.key === "ArrowLeft") {
+    carousel.prev();
+  }
 
   if (e.key === "Escape") {
     bootstrap.Modal.getInstance(modal).hide();
   }
 });
+
+
+function isMobile() {
+  return window.innerWidth <= 768;
+}

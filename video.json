@@ -1,26 +1,96 @@
 [
   {
-    "id": "vid1",
-    "title": "싫더라",
+    "id": "wb_vid1",
+    "group": "solo",
+    "title": "[MV] WOOBIN(우빈) _ 싫더라 ",
     "date": "2025.11.15",
     "youtube_id": "bvhLk0Hiu3A"
   },
   {
-    "id": "vid2",
-    "title": "Another Song",
-    "date": "2024.08.20",
+    "id": "wb_vid3",
+    "group": "solo",
+    "title": "[P.P.L : WOOBIN] 'Versace on the Floor(Bruno Mars)' Cover.",
+    "date": "2022.06.10",
+    "youtube_id": "NOWF7vmAtlk"
+  },
+  {
+    "id": "wb_vid4",
+    "group": "solo",
+    "title": "루미너스 (LUMINOUS) 우빈 'Someone Like You' FANCAM",
+    "date": "2021.10.18",
+    "youtube_id": "9F3lCeUpCTE"
+  },
+  {
+    "id": "wb_vid2",
+    "group": "solo",
+    "title": "루미너스 (LUMINOUS) 우빈 'Someone Like You' Stage",
+    "date": "2021.11.19",
     "youtube_id": "stF6xQDE1NE"
   },
   {
-    "id": "vid3",
-    "title": "Third Video",
-    "date": "2023.12.05",
+    "id": "wb_vid5",
+    "group": "solo",
+    "title": "루미너스 우빈 (LUMINOUS WOOBIN) - 여행(Orbit) Mini Fan Concert Live Clip",
+    "date": "2021.10.29",
+    "youtube_id": "Q8pkQe6IPZM"
+  },
+  {
+    "id": "wb_vid6",
+    "group": "solo",
+    "title": "LUMINOUS (루미너스) 'Introduction Film' / Teaser Clip #2 우빈 (WOO BIN)",
+    "date": "2020.01.29",
+    "youtube_id": "0M6p-YffAOY"
+  },
+
+  {
+    "id": "lmn_vid1",
+    "group": "luminous",
+    "title": "루미너스(LUMINOUS) 'Engine' MV",
+    "date": "2022.08.17",
     "youtube_id": "aS5PSYIs-Gs"
   },
   {
-    "id": "vid4",
-    "title": "Fourth Video",
-    "date": "2023.10.11",
+    "id": "lmn_vid2",
+    "group": "luminous",
+    "title": "루미너스(LUMINOUS) 'Wish You Were Here' MV",
+    "date": "2022.05.21",
+    "youtube_id": "jXRDh3IHmq8"
+  },
+  {
+    "id": "lmn_vid3",
+    "group": "luminous",
+    "title": "루미너스(LUMINOUS) 'All eyes down(비상)' Director's cut Ver. MV",
+    "date": "2022.05.04",
+    "youtube_id": "Hc84R1nqO0I"
+  },
+  {
+    "id": "lmn_vid4",
+    "group": "luminous",
+    "title": "루미너스(LUMINOUS) 'All eyes down(비상)' MV",
+    "date": "2022.01.20",
+    "youtube_id": "wkeC1r-Db8g"
+  },
+  {
+    "id": "lmn_vid5",
+    "group": "luminous",
+    "title": "루미너스(LUMINOUS) 'Home alone' MV",
+    "date": "2021.10.18",
+    "youtube_id": "nz_aC7VaiwU"
+  },
+  {
+    "id": "lmn_vid6",
+    "group": "luminous",
+    "title": "루미너스(LUMINOUS) 'RUN' MV",
+    "date": "2021.09.08",
     "youtube_id": "Y7kTjHt7SmI"
+  },
+  {
+    "id": "lmn_vid7",
+    "group": "luminous",
+    "title": "루미너스(LUMINOUS) '꿈루(꿈을 꾸는 루미너스)' MV",
+    "date": "2021.08.18",
+    "youtube_id": "sbUiXbHtHKI"
   }
 ]
+
+
