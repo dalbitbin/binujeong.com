@@ -1,22 +1,55 @@
 {
   "events": [
     {
-      "date": "2025-11-11",
+      "date": "2026-02-15",
       "type": "woobin",
       "era": "solo",
-      "title": "Solo Debut — \"싫더라\""
+      "title": "Last day in Thailand"
     },
+
     {
-      "date": "2026-02-19",
-      "type": "anniv",
+      "date": "2025-11-17",
+      "type": "woobin",
       "era": "solo",
-      "title": "100 Days Since Solo Debut"
+      "title": "First day in Thailand"
+    },
+
+    {
+      "date": "2025-11-15",
+      "type": "woobin",
+      "era": "solo",
+      "title": "Woobin Solo Debut Showcase"
     },
     {
-      "date": "2021-09-09",
-      "type": "luminous",
-      "era": "luminous",
-      "title": "LUMINOUS Debut — \"RUN\""
+      "date": "2025-11-15",
+      "type": "woobin",
+      "era": "solo",
+      "title": "싫더라 Release"
+    },
+    {
+      "date": "2025-11-15",
+      "type": "woobin",
+      "era": "solo",
+      "title": "Face-to-face Fansign"
+    },
+    {
+      "date": "2025-11-15",
+      "type": "woobin",
+      "era": "solo",
+      "title": "Naturally Video Call event"
+    },
+    {
+      "date": "2025-11-15",
+      "type": "woobin",
+      "era": "solo",
+      "title": "Naturally Voice Call event"
+    },
+
+    {
+      "date": "2025-11-14",
+      "type": "woobin",
+      "era": "solo",
+      "title": "HelloLive Video Call event"
     }
   ]
 }
