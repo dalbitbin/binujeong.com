@@ -332,7 +332,7 @@ html, body {
 }
 .discography-section h1 {
   letter-spacing: 0.5rem;
-  padding-top:10%;
+  padding-top: 5%;
   font-weight: 700;
 }
 .discography-section h3 {
@@ -342,8 +342,8 @@ html, body {
 
 /*--------- GALLERY -------------*/
 .gallery-section{
-  padding-bottom:5%;
-  padding-top:3%;
+  padding-top: 96px; /* so navbar doesn't cut off */
+  padding-bottom: 10%;
 }
 
 .gallery-section button{
@@ -359,7 +359,6 @@ html, body {
 
 .gallery-section h1 {
   letter-spacing: 0.5rem;
-  padding-top:10%;
   font-weight: 700;
 }
 
@@ -494,7 +493,7 @@ body.modal-open {
 /* ================= VIDEO PAGE ================= */
 
 .video-section {
-  padding-top: 120px; /* so navbar doesn't cut off */
+  padding-top: 96px; /* so navbar doesn't cut off */
   padding-bottom: 10%;
 }
 /* Main preview: responsive 16:9 like YouTube */
@@ -519,8 +518,6 @@ body.modal-open {
 /* Thumbnails (no black bars because it's an image thumb) */
 .video-section h1 {
   letter-spacing: 0.5rem;
-  padding-top:3rem;
-  padding-bottom: 1rem;
   font-weight: 700;
 }
 
