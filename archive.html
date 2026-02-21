@@ -104,22 +104,76 @@
 </div>
 
 
-<!-- ================= Gallery SECTION ================= -->
-<section class="gallery-section">
+<!-- ================= ARCHIVE SECTION ================= -->
+<section class="archive-section">
   <div class="container">
-    <h1 class="text-white text-center mb-4">ARCHIVE</h1>
-    <br><br>
+    <h1 class="text-white text-center mb-1">TIMELINE</h1>
+    <div class="text-center archive-subtitle">ARCHIVE</div>
 
-    
+    <div class="row g-4 mt-2">
+      <!-- LEFT: CALENDAR -->
+      <div class="col-12 col-lg-6">
+        <div class="calendar-card">
+          <div class="calendar-header">
+            <button class="cal-btn" id="cal-prev" aria-label="Previous month">
+              <i class="bi bi-chevron-left"></i>
+            </button>
+
+            <h3 class="calendar-month" id="cal-month">MONTH YYYY</h3>
+
+            <button class="cal-btn" id="cal-next" aria-label="Next month">
+              <i class="bi bi-chevron-right"></i>
+            </button>
+          </div>
+
+          <div class="calendar-grid" id="cal-weekdays"></div>
+          <div class="calendar-grid mt-1" id="cal-days"></div>
+</div>
+          <div class="archive-legend mt-3 px-4 pt-2">
+            <span class="legend-item"><span class="legend-dot dot-woobin"></span>WOOBIN</span>
+            <span class="legend-item"><span class="legend-dot dot-luminous"></span>LUMINOUS</span>
+            <span class="legend-item"><span class="legend-dot dot-anniv"></span>ANNIVERSARY</span>
+            <span class="legend-item"><span class="legend-dot dot-live"></span>TIKTOK LIVE</span>
+          </div>
+        
+      </div>
+
+      <!-- RIGHT: TIMELINE (two stacked boxes) -->
+      <div class="col-12 col-lg-6">
+        <div class="archive-card">
+          <div class="archive-era">
+            <div class="archive-era-title text-center">WOOBIN</div>
+            <div id="timeline-solo"></div>
+          </div>
+        </div>
+
+        <div class="archive-card mt-4">
+          <div class="archive-era">
+            <div class="archive-era-title text-center">LUMINOUS</div>
+            <div id="timeline-luminous"></div>
+          </div>
+        </div>
+      </div>
     </div>
-
+  </div>
 </section>
+
+<!-- Event Modal -->
+<div class="modal fade" id="archiveEventModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="background: rgba(0,0,0,.75); border: 1px solid rgba(255,255,255,0.12);">
+      <div class="modal-header" style="border-bottom: 1px solid rgba(255,255,255,0.10);">
+        <h5 class="modal-title text-white" id="modalDateTitle" style="letter-spacing: 0.25rem;">DATE</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="modalEventList" style="color: rgba(255,255,255,0.85);"></div>
+    </div>
+  </div>
+</div>
 
 
 <!-- ================= SCRIPT ================= -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
-<script src="gallery.js"></script>
-
+<script src="archive.js"></script>
 </body>
 </html>

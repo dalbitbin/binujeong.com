@@ -1,0 +1,22 @@
+{
+  "events": [
+    {
+      "date": "2025-11-11",
+      "type": "woobin",
+      "era": "solo",
+      "title": "Solo Debut — \"싫더라\""
+    },
+    {
+      "date": "2026-02-19",
+      "type": "anniv",
+      "era": "solo",
+      "title": "100 Days Since Solo Debut"
+    },
+    {
+      "date": "2021-09-09",
+      "type": "luminous",
+      "era": "luminous",
+      "title": "LUMINOUS Debut — \"RUN\""
+    }
+  ]
+}

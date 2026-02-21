@@ -607,3 +607,262 @@ body.modal-open {
   }
 
 }
+
+/* ================= ARCHIVE PAGE ================= */
+
+.archive-section{
+  padding-top: 96px; /* navbar safe */
+  padding-bottom: 10%;
+  color: #cccccc;
+}
+
+.archive-section h1{
+  letter-spacing: 0.5rem;
+  font-weight: 700;
+}
+
+.archive-subtitle{
+  letter-spacing: 0.20rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.85);
+  font-size: 0.75rem;
+  margin-bottom: 16px;
+}
+
+/* ---- Legend ---- */
+.archive-legend{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  font-size: 0.7rem;
+  letter-spacing: 0.12rem;
+  color: rgba(255,255,255,0.75);
+  margin: 12px 0 18px;
+}
+
+.legend-item{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend-dot{
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  display: inline-block;
+  opacity: 0.95;
+}
+
+/* category colors tuned for #1b1b1b */
+.dot-woobin{ background: #D4AF37; }   /* gold */
+.dot-luminous{ background: #5C7DA5; } /* desat blue */
+.dot-anniv{ background: #8A6FA8; }    /* muted purple */
+.dot-live{ background: #777777; }     /* gray */
+
+/* ---- Timeline ---- */
+.archive-card{
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 12px;
+  padding: 18px;
+}
+
+.archive-era{
+  margin-bottom: 22px;
+}
+
+.archive-era-title{
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.25rem;
+  font-size: 1rem;
+  margin-bottom: 14px;
+}
+
+.archive-year{
+  color: rgba(255,255,255,0.95);
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin: 18px 0 10px;
+}
+
+.archive-item{
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 14px;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.archive-date{
+  color: rgba(255,255,255,0.65);
+  font-size: 0.8rem;
+  letter-spacing: 0.18rem;
+  text-transform: uppercase;
+}
+
+/* title only, no pills */
+.archive-tags{ display:none; }
+
+.archive-title{
+  color: rgba(255,255,255,0.88);
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
+.pill-woobin{ border-color: rgba(212,175,55,0.35); }
+.pill-luminous{ border-color: rgba(92,125,165,0.35); }
+.pill-anniv{ border-color: rgba(138,111,168,0.35); }
+.pill-live{ border-color: rgba(119,119,119,0.35); }
+
+/* Minimal calendar cells (no boxes) */
+.calendar-day{
+  height: auto;
+  border: none;
+  background: transparent;
+  border-radius: 0;
+  position: relative;
+  padding: 0;
+  cursor: default;
+  display: grid;
+  place-items: center;
+  color: rgba(255,255,255,0.55);
+  font-size: 0.9rem;
+  letter-spacing: 0.08rem;
+}
+
+/* muted leading blanks */
+
+/* clickable only when has event */
+.calendar-day.has-event{
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.9);
+  z-index: 2;
+}
+
+/* the number itself */
+.calendar-day .day-num{
+  position: relative;
+  z-index: 20;
+}
+
+.calendar-day.has-event .day-num {
+  color: #fff;
+}
+
+/* circle behind the number */
+.calendar-day.has-event::before{
+  content:"";
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  position: absolute;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  opacity: .30; /* controls how “soft” the circle is */
+  color:#fff;
+}
+
+/* category coloring (circle + number) */
+
+.calendar-day.type-woobin::before{ background:#D4AF37; }
+.calendar-day.type-luminous::before{ background:#5C7DA5; }
+.calendar-day.type-anniv::before{ background:#8A6FA8; }
+.calendar-day.type-live::before{ background:#777777; }
+
+/* If multiple types collide, show a ring for “secondary” */
+.calendar-day.multi::after{
+  content:"";
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  position: absolute;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  border: 1px solid rgba(255,255,255,0.18);
+}
+
+/* remove dots row */
+.day-dots{ display:none !important; }
+
+.day-dots .legend-dot{
+  width: 6px;
+  height: 6px;
+}
+
+/* ---- Calendar wrapper ---- */
+.calendar-card{
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 12px;
+  padding: 18px;
+}
+
+.calendar-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.calendar-month{
+  color: #fff;
+  letter-spacing: 0.25rem;
+  font-weight: 700;
+  font-size: 0.90rem;
+  margin: 0;
+}
+
+.cal-btn{
+  background: transparent;
+  border: none;
+  color: rgba(255,255,255,0.85);
+  padding: 6px 10px;
+  transition: 0.2s;
+}
+
+.cal-btn:hover{
+  opacity: 0.7;
+}
+
+/* Grid */
+.calendar-grid{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.calendar-weekday{
+  text-align: center;
+  font-size: 0.75rem;
+  letter-spacing: 0.18rem;
+  color: rgba(255, 255, 255, 0.900);
+  padding: 6px 0 8px;
+}
+
+/* Mobile */
+@media (max-width: 768px){
+  .archive-card, .calendar-card{
+    padding: 16px;
+    border-radius: 10px;
+  }
+  .archive-item{
+    grid-template-columns: 86px 1fr;
+  }
+}
+
+#cal-days {
+  height: 330px;          /* fixed calendar height */
+  grid-auto-rows: 1fr;    /* each row fills evenly */
+}
+
+#cal-weekdays {
+  grid-auto-rows: 24px;
+}
+
+.archive-legend { justify-content: flex-start; }
+
