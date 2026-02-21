@@ -50,6 +50,75 @@
       "type": "woobin",
       "era": "solo",
       "title": "HelloLive Video Call event"
+    },
+     {
+      "date": "2021-09-09",
+      "type": "luminous",
+      "era": "luminous",
+      "title": "LUMINOUS Debut — \"RUN\" Release"
+    },
+
+    {
+      "date": "2022-01-19",
+      "type": "luminous",
+      "era": "luminous",
+      "title": "\"WISH YOU WERE HERE\" Release"
+    },
+
+    {
+      "date": "2022-05-04",
+      "type": "luminous",
+      "era": "luminous",
+      "title": "\"All Eyes Down (비상)\" MV Release"
+    },
+
+    {
+      "date": "2022-08-17",
+      "type": "luminous",
+      "era": "luminous",
+      "title": "\"Engine\" MV Release"
+    },
+
+    {
+      "date": "2023-02-20",
+      "type": "luminous",
+      "era": "luminous",
+      "title": "\"Creature\" Release"
+    },
+
+    {
+      "date": "2023-04-12",
+      "type": "luminous",
+      "era": "luminous",
+      "title": "Europe Tour — Paris"
+    },
+
+    {
+      "date": "2023-04-14",
+      "type": "luminous",
+      "era": "luminous",
+      "title": "Europe Tour — Cologne"
+    },
+
+    {
+      "date": "2023-04-16",
+      "type": "luminous",
+      "era": "luminous",
+      "title": "Europe Tour — Madrid"
+    },
+
+    {
+      "date": "2023-04-18",
+      "type": "luminous",
+      "era": "luminous",
+      "title": "Europe Tour — Warsaw"
+    },
+
+    {
+      "date": "2023-04-20",
+      "type": "luminous",
+      "era": "luminous",
+      "title": "Europe Tour — Amsterdam"
     }
   ]
 }
