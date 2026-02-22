@@ -1,7 +1,22 @@
-// ================= ARCHIVE.JS (LANG TOGGLE) =================
+// Get lang from URL
+function getLangFromURL() {
+  const params = new URLSearchParams(window.location.search);
+  return params.get("lang") || "kr";
+}
 
-// ===================== SETTINGS =====================
-let currentLang = "kr"; // "kr" or "en"
+// Set lang in URL without reloading
+function setLangInURL(lang) {
+  const params = new URLSearchParams(window.location.search);
+  params.set("lang", lang);
+
+  const newURL =
+    window.location.pathname + "?" + params.toString();
+
+  window.history.replaceState({}, "", newURL);
+}
+
+// Initialize language
+let currentLang = getLangFromURL();
 
 // ===================== DOM =====================
 const TIMELINE_SOLO = document.getElementById("timeline-solo");

@@ -114,7 +114,6 @@ html, body {
   width: 100%;
   left: 0;
   background: transparent;
-  font-size: 18px;
   color: #fff;
   transition: 0.2s;
 }
@@ -128,7 +127,7 @@ html, body {
 
 }
 .hybrid-icons i {
-  font-size: 18px;
+  font-size: 1.3rem;
   color: #fff;
   transition: 0.2s;
 }
@@ -142,6 +141,7 @@ html, body {
 .other-page{
   background: #1b1b1b;
 }
+
 
 
 /* Language */
@@ -668,9 +668,9 @@ body.modal-open {
 }
 
 /* category colors tuned for #1b1b1b */
-.dot-woobin{ background: #D4AF37; }   /* gold */
+.dot-woobin{ background: #8A6FA8 }   /* gold */
 .dot-luminous{ background: #5C7DA5; } /* desat blue */
-.dot-anniv{ background: #8A6FA8; }    /* muted purple */
+.dot-anniv{ background: #D4AF37; }    /* muted purple */
 .dot-live{ background: #777777; }     /* gray */
 .dot-showcase { background: #6fa89c;}
 .dot-concert { background: #a87b6f;}
@@ -793,15 +793,15 @@ body.modal-open {
   inset: 50% auto auto 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  opacity: .30; /* controls how “soft” the circle is */
+  opacity: .60; /* controls how “soft” the circle is */
   color:#fff;
 }
 
 /* category coloring (circle + number) */
 
-.calendar-day.type-woobin::before{ background:#D4AF37; }
+.calendar-day.type-woobin::before{ background:#8A6FA8; }
 .calendar-day.type-luminous::before{ background:#5C7DA5; }
-.calendar-day.type-anniv::before{ background:#8A6FA8; }
+.calendar-day.type-anniv::before{ background:#D4AF37; }
 .calendar-day.type-live::before{ background:#777777; }
 
 /* If multiple types collide, show a ring for “secondary” */
@@ -905,4 +905,35 @@ body.modal-open {
 }
 
 .archive-legend { justify-content: flex-start; }
+
+/* ====== CURRENT LANG ======== */
+/* Language dropdown styling (dark theme) */
+.lang-menu {
+  background: #1b1b1b;
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 12px;
+  padding: 8px;
+  min-width: 60px;
+}
+
+.lang-menu .dropdown-item {
+  color: rgba(255,255,255,0.85);
+  letter-spacing: 0.12rem;
+  font-weight: 600;
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+
+.lang-menu .dropdown-item:hover,
+.lang-menu .dropdown-item:focus {
+  background: rgba(255,255,255,0.06);
+  color: #fff;
+}
+
+/* remove Bootstrap caret spacing weirdness if needed */
+.language-switch.dropdown-toggle::after {
+  margin-left: 8px;
+  opacity: 0.7;
+}
+
 

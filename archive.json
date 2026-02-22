@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-02-22",
+    "type": "anniversary",
+    "era": "solo",
+    "title_kr": "솔로 데뷔 100일",
+    "title_en": "Solo Debut 100 Days",
+    "link": ""
+  },
+  {
+    "date": "2026-01-24",
+    "type": "anniversary",
+    "era": "solo",
+    "title_kr": "틱톡 300일",
+    "title_en": "TikTok 300 Days",
+    "link": ""
+  },
+    {
+    "date": "2025-10-18",
+    "type": "anniversary",
+    "era": "solo",
+    "title_kr": "틱톡 200일",
+    "title_en": "TikTok 200 Days",
+    "link": ""
+  },
+      {
+    "date": "2025-07-10",
+    "type": "anniversary",
+    "era": "solo",
+    "title_kr": "틱톡 100일",
+    "title_en": "TikTok 100 Days",
+    "link": ""
+  },
+  {
     "date": "2026-02-16",
     "type": "woobin",
     "era": "solo",
@@ -203,8 +235,8 @@
     "date": "2022-12-23",
     "type": "woobin",
     "era": "solo",
-    "title_kr": "WINTER PARTY 영상 초대장 공개",
-    "title_en": "WINTER PARTY Video Invitation Release",
+    "title_kr": "WINTER PARTY 영상 초대장 공개 (우빈)",
+    "title_en": "WINTER PARTY Video Invitation Release (WOOBIN)",
     "link": "https://x.com/MubeatOfficial/status/1606243231414603778?s=20"
   },
   {
