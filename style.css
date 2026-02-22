@@ -858,6 +858,15 @@ body.modal-open {
   padding: 6px 0 8px;
 }
 
+.archive-item.clickable {
+  cursor: pointer;
+}
+
+.archive-item.clickable:hover {
+  opacity: 0.7;
+  font-weight: 300;
+}
+
 /* Mobile */
 @media (max-width: 768px){
   .archive-card, .calendar-card{

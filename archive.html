@@ -109,6 +109,7 @@
   <div class="container">
     <h1 class="text-white text-center mb-1">TIMELINE</h1>
     <div class="text-center archive-subtitle">ARCHIVE</div>
+    <br><br>
 
     <div class="row g-4 mt-2">
       <!-- LEFT: CALENDAR -->
@@ -128,28 +129,28 @@
 
           <div class="calendar-grid" id="cal-weekdays"></div>
           <div class="calendar-grid mt-1" id="cal-days"></div>
-</div>
-          <div class="archive-legend mt-3 px-4 pt-2">
+
+          <div class="archive-legend mt-3">
             <span class="legend-item"><span class="legend-dot dot-woobin"></span>WOOBIN</span>
             <span class="legend-item"><span class="legend-dot dot-luminous"></span>LUMINOUS</span>
             <span class="legend-item"><span class="legend-dot dot-anniv"></span>ANNIVERSARY</span>
-            <span class="legend-item"><span class="legend-dot dot-live"></span>TIKTOK LIVE</span>
+            <span class="legend-item"><span class="legend-dot dot-live"></span>LIVE</span>
           </div>
-        
+        </div>
       </div>
 
-      <!-- RIGHT: TIMELINE (two stacked boxes) -->
+      <!-- RIGHT: TIMELINE -->
       <div class="col-12 col-lg-6">
         <div class="archive-card">
           <div class="archive-era">
-            <div class="archive-era-title text-center">WOOBIN</div>
+            <div class="archive-era-title">SOLO</div>
             <div id="timeline-solo"></div>
           </div>
         </div>
 
         <div class="archive-card mt-4">
           <div class="archive-era">
-            <div class="archive-era-title text-center">LUMINOUS</div>
+            <div class="archive-era-title">LUMINOUS</div>
             <div id="timeline-luminous"></div>
           </div>
         </div>
@@ -158,15 +159,17 @@
   </div>
 </section>
 
-<!-- Event Modal -->
+<!-- Modal (needed for calendar day click) -->
 <div class="modal fade" id="archiveEventModal" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content" style="background: rgba(0,0,0,.75); border: 1px solid rgba(255,255,255,0.12);">
-      <div class="modal-header" style="border-bottom: 1px solid rgba(255,255,255,0.10);">
-        <h5 class="modal-title text-white" id="modalDateTitle" style="letter-spacing: 0.25rem;">DATE</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal-content">
+      <div class="modal-body p-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <div class="text-white" style="letter-spacing:0.2rem; font-weight:700;" id="modalDateTitle"></div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div id="modalEventList"></div>
       </div>
-      <div class="modal-body" id="modalEventList" style="color: rgba(255,255,255,0.85);"></div>
     </div>
   </div>
 </div>

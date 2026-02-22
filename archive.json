@@ -1,124 +1,175 @@
 {
   "events": [
     {
-      "date": "2026-02-15",
+      "date": "2026-02-16",
       "type": "woobin",
       "era": "solo",
-      "title": "Last day in Thailand"
+      "title_kr": "한국 입국",
+      "title_en": "Return to Korea from Thailand",
+      "link": ""
     },
-
     {
       "date": "2025-11-17",
       "type": "woobin",
       "era": "solo",
-      "title": "First day in Thailand"
-    },
-
-    {
-      "date": "2025-11-15",
-      "type": "woobin",
-      "era": "solo",
-      "title": "Woobin Solo Debut Showcase"
+      "title_kr": "태국 출국 (방콕)",
+      "title_en": "Departure to Thailand (Bangkok)",
+      "link": ""
     },
     {
       "date": "2025-11-15",
       "type": "woobin",
       "era": "solo",
-      "title": "싫더라 Release"
+      "title_kr": "우빈 솔로 데뷔",
+      "title_en": "WOOBIN Solo Debut",
+      "link": ""
     },
     {
       "date": "2025-11-15",
       "type": "woobin",
       "era": "solo",
-      "title": "Face-to-face Fansign"
+      "title_kr": "[LIVE] 우빈 첫 솔로 데뷔 쇼케이스 ‘싫더라’",
+      "title_en": "[LIVE] WOOBIN 1st Solo Debut Showcase '싫더라'",
+      "link": "https://hellolive.tv/ko/detail/887"
     },
     {
       "date": "2025-11-15",
       "type": "woobin",
       "era": "solo",
-      "title": "Naturally Video Call event"
+      "title_kr": "우빈(WOOBIN) - 싫더라 MV 공개",
+      "title_en": "WOOBIN(우빈) - 싫더라 MV Release",
+      "link": "https://www.youtube.com/watch?v=bvhLk0Hiu3A"
     },
     {
       "date": "2025-11-15",
       "type": "woobin",
       "era": "solo",
-      "title": "Naturally Voice Call event"
+      "title_kr": "내츄럴리뮤직 개인 보이스콜 이벤트",
+      "title_en": "Naturally Music Individual Voice Call Event",
+      "link": "http://www.naturallymusic.co.kr/shop/shopdetail.html?branduid=12302859&xcode=037&mcode=002&scode=&type=X&sort=regdate&cur_code=037&search=&GfDT=a2p3UFk%3D"
     },
-
+    {
+      "date": "2025-11-15",
+      "type": "woobin",
+      "era": "solo",
+      "title_kr": "내츄럴리뮤직 개인 영상통화 이벤트",
+      "title_en": "Naturally Music Individual Video Call Event",
+      "link": "http://www.naturallymusic.co.kr/shop/shopdetail.html?branduid=12302858&xcode=037&mcode=002&scode=&type=X&sort=regdate&cur_code=037&search=&GfDT=bmd3UFo%3D"
+    },
+    {
+      "date": "2025-11-15",
+      "type": "woobin",
+      "era": "solo",
+      "title_kr": "내츄럴리뮤직 대면 팬싸인회 이벤트",
+      "title_en": "Naturally Music Face-to-face Fansign Event",
+      "link": "http://www.naturallymusic.co.kr/shop/shopdetail.html?branduid=12302857&xcode=037&mcode=002&scode=&type=X&sort=regdate&cur_code=037&search=&GfDT=bmp0W11D"
+    },
     {
       "date": "2025-11-14",
       "type": "woobin",
       "era": "solo",
-      "title": "HelloLive Video Call event"
+      "title_kr": "hellolive 비디오콜 이벤트",
+      "title_en": "hellolive Video Call Event",
+      "link": "https://hellolive.tv/ko/detail/887"
     },
-     {
+
+    {
+      "date": "2025-04-01",
+      "type": "anniversary",
+      "era": "solo",
+      "title_kr": "우빈 생일",
+      "title_en": "Woobin Birthday",
+      "link": ""
+    },
+    {
+      "date": "2023-04-01",
+      "type": "anniversary",
+      "era": "solo",
+      "title_kr": "우빈 생일",
+      "title_en": "Woobin Birthday",
+      "link": ""
+    },
+
+    {
+      "date": "2025-09-09",
+      "type": "anniversary",
+      "era": "luminous",
+      "title_kr": "루미너스 데뷔 4주년",
+      "title_en": "LUMINOUS 4th Year Anniversary",
+      "link": ""
+    },
+    {
+      "date": "2024-09-09",
+      "type": "anniversary",
+      "era": "luminous",
+      "title_kr": "루미너스 데뷔 3주년",
+      "title_en": "LUMINOUS 3rd Year Anniversary",
+      "link": "https://www.youtube.com/watch?v=4qelfIox--8"
+    },
+    {
+      "date": "2023-09-09",
+      "type": "anniversary",
+      "era": "luminous",
+      "title_kr": "루미너스 데뷔 2주년",
+      "title_en": "LUMINOUS 2nd Year Anniversary",
+      "link": "https://www.youtube.com/live/Ph6G67o38kU?si=znwoW4yXE6DLs8ma"
+    },
+    {
+      "date": "2022-09-09",
+      "type": "anniversary",
+      "era": "luminous",
+      "title_kr": "루미너스 데뷔 1주년",
+      "title_en": "LUMINOUS 1st Year Anniversary",
+      "link": ""
+    },
+    {
       "date": "2021-09-09",
       "type": "luminous",
       "era": "luminous",
-      "title": "LUMINOUS Debut — \"RUN\" Release"
+      "title_kr": "루미너스 데뷔",
+      "title_en": "LUMINOUS Debut",
+      "link": ""
     },
 
     {
-      "date": "2022-01-19",
+      "date": "2022-06-20",
       "type": "luminous",
       "era": "luminous",
-      "title": "\"WISH YOU WERE HERE\" Release"
+      "title_kr": "루미너스 공식 팬덤명 공개 - '루미니'",
+      "title_en": "LUMINOUS Official Fandom Name Announcement - 'Lumini'",
+      "link": "https://www.youtube.com/watch?v=KAevW06KaKE"
     },
-
     {
-      "date": "2022-05-04",
-      "type": "luminous",
+      "date": "2025-06-20",
+      "type": "anniversary",
       "era": "luminous",
-      "title": "\"All Eyes Down (비상)\" MV Release"
+      "title_kr": "루미니 3주년",
+      "title_en": "LUMINI 3rd Year Anniversary",
+      "link": ""
     },
-
     {
-      "date": "2022-08-17",
-      "type": "luminous",
+      "date": "2024-06-20",
+      "type": "anniversary",
       "era": "luminous",
-      "title": "\"Engine\" MV Release"
+      "title_kr": "루미니 2주년",
+      "title_en": "LUMINI 2nd Year Anniversary",
+      "link": ""
     },
-
     {
-      "date": "2023-02-20",
-      "type": "luminous",
+      "date": "2023-06-20",
+      "type": "anniversary",
       "era": "luminous",
-      "title": "\"Creature\" Release"
+      "title_kr": "루미니 1주년",
+      "title_en": "LUMINI 1st Year Anniversary",
+      "link": "https://www.youtube.com/live/AFuSVnvWCFg?si=8jKrZvNleerhG4Hj"
     },
-
-    {
-      "date": "2023-04-12",
-      "type": "luminous",
-      "era": "luminous",
-      "title": "Europe Tour — Paris"
-    },
-
-    {
-      "date": "2023-04-14",
-      "type": "luminous",
-      "era": "luminous",
-      "title": "Europe Tour — Cologne"
-    },
-
-    {
-      "date": "2023-04-16",
-      "type": "luminous",
-      "era": "luminous",
-      "title": "Europe Tour — Madrid"
-    },
-
-    {
-      "date": "2023-04-18",
-      "type": "luminous",
-      "era": "luminous",
-      "title": "Europe Tour — Warsaw"
-    },
-
-    {
-      "date": "2023-04-20",
-      "type": "luminous",
-      "era": "luminous",
-      "title": "Europe Tour — Amsterdam"
+        {
+      "date": "2023-04-01",
+      "type": "woobin",
+      "era": "solo",
+      "title_kr": "#찬란한_봄의_시작_정우빈_생일파티",
+      "title_en": "WOOBIN Birthday Live",
+      "link": "https://www.youtube.com/watch?v=6BnAmMcDsnE"
     }
   ]
 }
