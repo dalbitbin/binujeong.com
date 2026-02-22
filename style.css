@@ -325,7 +325,7 @@ html, body {
 }
 
 .album-date-sm {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: rgba(255,255,255,0.7);
 }
 
@@ -349,6 +349,19 @@ html, body {
   .discography-section {
     padding-top: 96px;
   }
+  .album-title-sm{
+    font-weight: 500;
+    color: #fff;
+    font-size: 0.85rem;
+  }
+  .album-date-sm {
+  font-size: 0.7rem;
+  }
+  .discography-section h3 {
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
 }
 
 /*--------- GALLERY -------------*/
