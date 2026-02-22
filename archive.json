@@ -1,175 +1,858 @@
-{
-  "events": [
-    {
-      "date": "2026-02-16",
-      "type": "woobin",
-      "era": "solo",
-      "title_kr": "한국 입국",
-      "title_en": "Return to Korea from Thailand",
-      "link": ""
-    },
-    {
-      "date": "2025-11-17",
-      "type": "woobin",
-      "era": "solo",
-      "title_kr": "태국 출국 (방콕)",
-      "title_en": "Departure to Thailand (Bangkok)",
-      "link": ""
-    },
-    {
-      "date": "2025-11-15",
-      "type": "woobin",
-      "era": "solo",
-      "title_kr": "우빈 솔로 데뷔",
-      "title_en": "WOOBIN Solo Debut",
-      "link": ""
-    },
-    {
-      "date": "2025-11-15",
-      "type": "woobin",
-      "era": "solo",
-      "title_kr": "[LIVE] 우빈 첫 솔로 데뷔 쇼케이스 ‘싫더라’",
-      "title_en": "[LIVE] WOOBIN 1st Solo Debut Showcase '싫더라'",
-      "link": "https://hellolive.tv/ko/detail/887"
-    },
-    {
-      "date": "2025-11-15",
-      "type": "woobin",
-      "era": "solo",
-      "title_kr": "우빈(WOOBIN) - 싫더라 MV 공개",
-      "title_en": "WOOBIN(우빈) - 싫더라 MV Release",
-      "link": "https://www.youtube.com/watch?v=bvhLk0Hiu3A"
-    },
-    {
-      "date": "2025-11-15",
-      "type": "woobin",
-      "era": "solo",
-      "title_kr": "내츄럴리뮤직 개인 보이스콜 이벤트",
-      "title_en": "Naturally Music Individual Voice Call Event",
-      "link": "http://www.naturallymusic.co.kr/shop/shopdetail.html?branduid=12302859&xcode=037&mcode=002&scode=&type=X&sort=regdate&cur_code=037&search=&GfDT=a2p3UFk%3D"
-    },
-    {
-      "date": "2025-11-15",
-      "type": "woobin",
-      "era": "solo",
-      "title_kr": "내츄럴리뮤직 개인 영상통화 이벤트",
-      "title_en": "Naturally Music Individual Video Call Event",
-      "link": "http://www.naturallymusic.co.kr/shop/shopdetail.html?branduid=12302858&xcode=037&mcode=002&scode=&type=X&sort=regdate&cur_code=037&search=&GfDT=bmd3UFo%3D"
-    },
-    {
-      "date": "2025-11-15",
-      "type": "woobin",
-      "era": "solo",
-      "title_kr": "내츄럴리뮤직 대면 팬싸인회 이벤트",
-      "title_en": "Naturally Music Face-to-face Fansign Event",
-      "link": "http://www.naturallymusic.co.kr/shop/shopdetail.html?branduid=12302857&xcode=037&mcode=002&scode=&type=X&sort=regdate&cur_code=037&search=&GfDT=bmp0W11D"
-    },
-    {
-      "date": "2025-11-14",
-      "type": "woobin",
-      "era": "solo",
-      "title_kr": "hellolive 비디오콜 이벤트",
-      "title_en": "hellolive Video Call Event",
-      "link": "https://hellolive.tv/ko/detail/887"
-    },
-
-    {
-      "date": "2025-04-01",
-      "type": "anniversary",
-      "era": "solo",
-      "title_kr": "우빈 생일",
-      "title_en": "Woobin Birthday",
-      "link": ""
-    },
-    {
-      "date": "2023-04-01",
-      "type": "anniversary",
-      "era": "solo",
-      "title_kr": "우빈 생일",
-      "title_en": "Woobin Birthday",
-      "link": ""
-    },
-
-    {
-      "date": "2025-09-09",
-      "type": "anniversary",
-      "era": "luminous",
-      "title_kr": "루미너스 데뷔 4주년",
-      "title_en": "LUMINOUS 4th Year Anniversary",
-      "link": ""
-    },
-    {
-      "date": "2024-09-09",
-      "type": "anniversary",
-      "era": "luminous",
-      "title_kr": "루미너스 데뷔 3주년",
-      "title_en": "LUMINOUS 3rd Year Anniversary",
-      "link": "https://www.youtube.com/watch?v=4qelfIox--8"
-    },
-    {
-      "date": "2023-09-09",
-      "type": "anniversary",
-      "era": "luminous",
-      "title_kr": "루미너스 데뷔 2주년",
-      "title_en": "LUMINOUS 2nd Year Anniversary",
-      "link": "https://www.youtube.com/live/Ph6G67o38kU?si=znwoW4yXE6DLs8ma"
-    },
-    {
-      "date": "2022-09-09",
-      "type": "anniversary",
-      "era": "luminous",
-      "title_kr": "루미너스 데뷔 1주년",
-      "title_en": "LUMINOUS 1st Year Anniversary",
-      "link": ""
-    },
-    {
-      "date": "2021-09-09",
-      "type": "luminous",
-      "era": "luminous",
-      "title_kr": "루미너스 데뷔",
-      "title_en": "LUMINOUS Debut",
-      "link": ""
-    },
-
-    {
-      "date": "2022-06-20",
-      "type": "luminous",
-      "era": "luminous",
-      "title_kr": "루미너스 공식 팬덤명 공개 - '루미니'",
-      "title_en": "LUMINOUS Official Fandom Name Announcement - 'Lumini'",
-      "link": "https://www.youtube.com/watch?v=KAevW06KaKE"
-    },
-    {
-      "date": "2025-06-20",
-      "type": "anniversary",
-      "era": "luminous",
-      "title_kr": "루미니 3주년",
-      "title_en": "LUMINI 3rd Year Anniversary",
-      "link": ""
-    },
-    {
-      "date": "2024-06-20",
-      "type": "anniversary",
-      "era": "luminous",
-      "title_kr": "루미니 2주년",
-      "title_en": "LUMINI 2nd Year Anniversary",
-      "link": ""
-    },
-    {
-      "date": "2023-06-20",
-      "type": "anniversary",
-      "era": "luminous",
-      "title_kr": "루미니 1주년",
-      "title_en": "LUMINI 1st Year Anniversary",
-      "link": "https://www.youtube.com/live/AFuSVnvWCFg?si=8jKrZvNleerhG4Hj"
-    },
-        {
-      "date": "2023-04-01",
-      "type": "woobin",
-      "era": "solo",
-      "title_kr": "#찬란한_봄의_시작_정우빈_생일파티",
-      "title_en": "WOOBIN Birthday Live",
-      "link": "https://www.youtube.com/watch?v=6BnAmMcDsnE"
-    }
-  ]
-}
+[
+  {
+    "date": "2026-02-16",
+    "type": "woobin",
+    "era": "solo",
+    "title_kr": "한국 입국",
+    "title_en": "Return to Korea from Thailand",
+    "link": ""
+  },
+  {
+    "date": "2025-11-17",
+    "type": "woobin",
+    "era": "solo",
+    "title_kr": "태국 출국 (방콕)",
+    "title_en": "Departure to Thailand (Bangkok)",
+    "link": ""
+  },
+  {
+    "date": "2025-11-15",
+    "type": "woobin",
+    "era": "solo",
+    "title_kr": "우빈 솔로 데뷔 ",
+    "title_en": "WOOBIN Solo Debut",
+    "link": ""
+  },
+  {
+    "date": "2025-11-15",
+    "type": "showcase",
+    "era": "solo",
+    "title_kr": "우빈 첫 솔로 데뷔 쇼케이스 ‘싫더라’ 개최",
+    "title_en": "WOOBIN 1st Solo Debut Showcase '싫더라'",
+    "link": "https://hellolive.tv/ko/detail/887"
+  },
+  {
+    "date": "2025-11-15",
+    "type": "woobin",
+    "era": "solo",
+    "title_kr": "우빈(WOOBIN) - 싫더라 MV 공개",
+    "title_en": "WOOBIN(우빈) - 싫더라 MV Release",
+    "link": "https://www.youtube.com/watch?v=bvhLk0Hiu3A"
+  },
+  {
+    "date": "2025-11-15",
+    "type": "woobin",
+    "era": "solo",
+    "title_kr": "내츄럴리뮤직 개인 보이스콜 이벤트",
+    "title_en": "Naturally Music Individual Voice Call Event",
+    "link": "http://www.naturallymusic.co.kr/shop/shopdetail.html?branduid=12302859&xcode=037&mcode=002&scode=&type=X&sort=regdate&cur_code=037&search=&GfDT=a2p3UFk%3D"
+  },
+  {
+    "date": "2025-11-15",
+    "type": "woobin",
+    "era": "solo",
+    "title_kr": "내츄럴리뮤직 개인 영상통화 이벤트",
+    "title_en": "Naturally Music Individual Video Call Event",
+    "link": "http://www.naturallymusic.co.kr/shop/shopdetail.html?branduid=12302858&xcode=037&mcode=002&scode=&type=X&sort=regdate&cur_code=037&search=&GfDT=bmd3UFo%3D"
+  },
+  {
+    "date": "2025-11-15",
+    "type": "woobin",
+    "era": "solo",
+    "title_kr": "내츄럴리뮤직 대면 팬싸인회 이벤트",
+    "title_en": "Naturally Music Face-to-face Fansign Event ",
+    "link": "http://www.naturallymusic.co.kr/shop/shopdetail.html?branduid=12302857&xcode=037&mcode=002&scode=&type=X&sort=regdate&cur_code=037&search=&GfDT=bmp0W11D"
+  },
+  {
+    "date": "2025-11-15",
+    "type": "woobin",
+    "era": "solo",
+    "title_kr": "1st Single Album '싫더라' 발매",
+    "title_en": "1st Single Album '싫더라' Release",
+    "link": "http://www.naturallymusic.co.kr/shop/shopdetail.html?branduid=12303100&search=&xcode=036&mcode=002&scode=&special=1&GfDT=bm51W14%3D"
+  },
+  {
+    "date": "2025-11-14",
+    "type": "woobin",
+    "era": "solo",
+    "title_kr": "hellolive 비디오콜이벤트",
+    "title_en": "hellolive Video Call Event",
+    "link": "https://hellolive.tv/ko/detail/887"
+  },
+  {
+    "date": "2025-04-01",
+    "type": "anniversary",
+    "era": "solo",
+    "title_kr": "우빈 생일날",
+    "title_en": "WOOBIN Birthday",
+    "link": ""
+  },
+  {
+    "date": "2025-09-09",
+    "type": "anniversary",
+    "era": "luminous",
+    "title_kr": "루미너스 데뷔 4주년",
+    "title_en": "LUMINOUS 4th Year Anniversary",
+    "link": ""
+  },
+  {
+    "date": "2022-06-20",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "루미너스 공식 팬덤명 발표 - '루미니'",
+    "title_en": "LUMINOUS Official Fandom Name Announcement - 'Lumini'",
+    "link": "https://www.youtube.com/watch?v=KAevW06KaKE"
+  },
+  {
+    "date": "2025-06-20",
+    "type": "anniversary",
+    "era": "luminous",
+    "title_kr": "루미니 3주년",
+    "title_en": "LUMINI 3rd Year Anniversary",
+    "link": ""
+  },
+  {
+    "date": "2024-06-20",
+    "type": "anniversary",
+    "era": "luminous",
+    "title_kr": "루미니 2주년",
+    "title_en": "LUMINI 2nd Year Anniversary",
+    "link": ""
+  },
+  {
+    "date": "2023-06-20",
+    "type": "anniversary",
+    "era": "luminous",
+    "title_kr": "루미니 1주년",
+    "title_en": "LUMINI 1st Year Anniversary",
+    "link": "https://www.youtube.com/live/AFuSVnvWCFg?si=8jKrZvNleerhG4Hj"
+  },
+  {
+    "date": "2024-09-09",
+    "type": "anniversary",
+    "era": "luminous",
+    "title_kr": "루미너스 데뷔 3주년",
+    "title_en": "LUMINOUS 3rd Year Anniversary",
+    "link": "https://www.youtube.com/watch?v=4qelfIox--8"
+  },
+  {
+    "date": "2023-09-09",
+    "type": "anniversary",
+    "era": "luminous",
+    "title_kr": "루미너스 데뷔 2주년",
+    "title_en": "LUMINOUS 2nd Year Anniversary",
+    "link": "https://www.youtube.com/live/Ph6G67o38kU?si=znwoW4yXE6DLs8ma"
+  },
+  {
+    "date": "2022-09-09",
+    "type": "anniversary",
+    "era": "luminous",
+    "title_kr": "루미너스 데뷔 1주년",
+    "title_en": "LUMINOUS 1st Year Anniversary",
+    "link": ""
+  },
+  {
+    "date": "2021-09-09",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "루미너스 데뷔",
+    "title_en": "LUMINOUS Debut",
+    "link": ""
+  },
+  {
+    "date": "2024-04-01",
+    "type": "anniversary",
+    "era": "solo",
+    "title_kr": "우빈 생일날",
+    "title_en": "WOOBIN Birthday",
+    "link": ""
+  },
+  {
+    "date": "2023-04-01",
+    "type": "anniversary",
+    "era": "solo",
+    "title_kr": "우빈 생일날",
+    "title_en": "WOOBIN Birthday",
+    "link": ""
+  },
+  {
+    "date": "2023-04-01",
+    "type": "woobin",
+    "era": "solo",
+    "title_kr": "#찬란한_봄의_시작_정우빈_생일파티",
+    "title_en": "WOOBIN Birthday Live",
+    "link": "https://www.youtube.com/watch?v=6BnAmMcDsnE"
+  },
+  {
+    "date": "2021-09-09",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "루미너스(LUMINOUS) 'RUN' MV 공개",
+    "title_en": "루미너스(LUMINOUS) 'RUN' MV Release",
+    "link": "https://youtu.be/Y7kTjHt7SmI?si=BQrmMxOjA8YTcRyp"
+  },
+  {
+    "date": "2022-12-27",
+    "type": "concert",
+    "era": "luminous",
+    "title_kr": "LUMINOUS WINTER PARTY 개최",
+    "title_en": "LUMINOUS WINTER PARTY",
+    "link": ""
+  },
+  {
+    "date": "2022-12-23",
+    "type": "woobin",
+    "era": "solo",
+    "title_kr": "WINTER PARTY 영상 초대장 공개",
+    "title_en": "WINTER PARTY Video Invitation Release",
+    "link": "https://x.com/MubeatOfficial/status/1606243231414603778?s=20"
+  },
+  {
+    "date": "2022-06-10",
+    "type": "woobin",
+    "era": "solo",
+    "title_kr": "Versace on the Floor (Bruno Mars)' Cover 영상 공개",
+    "title_en": "Versace on the Floor (Bruno Mars)' Cover Video Release",
+    "link": "https://www.youtube.com/watch?v=NOWF7vmAtlk"
+  },
+  {
+    "date": "2021-11-19",
+    "type": "woobin",
+    "era": "solo",
+    "title_kr": "뮤빗라이브  'Someone like you' 무대 공개",
+    "title_en": "MuBeat Live 'Someone Like You' Stage",
+    "link": "https://www.youtube.com/watch?v=stF6xQDE1NE"
+  },
+  {
+    "date": "2021-11-19",
+    "type": "woobin",
+    "era": "solo",
+    "title_kr": "뮤빗라이브  'Someone like you' Fancam 공개",
+    "title_en": "MuBeat Live 'Someone Like You' Fancam",
+    "link": "https://www.youtube.com/watch?v=9F3lCeUpCTE"
+  },
+  {
+    "date": "2021-10-29",
+    "type": "woobin",
+    "era": "solo",
+    "title_kr": "여행(Orbit) Mini Fan Concert Live Clip 공개",
+    "title_en": "Orbit' Mini Fan Concert Live Clip",
+    "link": "https://www.youtube.com/watch?v=Q8pkQe6IPZM"
+  },
+  {
+    "date": "2020-01-20",
+    "type": "woobin",
+    "era": "solo",
+    "title_kr": " 'Introduction Film' / Teaser Clip #2 공개",
+    "title_en": " 'Introduction Film' / Teaser Clip #2",
+    "link": "https://www.youtube.com/watch?v=0M6p-YffAOY"
+  },
+  {
+    "date": "2022-08-10",
+    "type": "woobin",
+    "era": "solo",
+    "title_kr": "루미너스 1st Full Album 'LUMINOUS in WONDERLAND' 컨셉 트레일러 공개 (우빈)",
+    "title_en": "LUMINOUS 1st Full Album\n[LUMINOUS in WONDERLAND] CONCEPT TRAILER WONDERLAND ver. (WOOBIN)",
+    "link": "https://www.youtube.com/watch?v=C1pjXH5aYwU"
+  },
+  {
+    "date": "2025-02-21",
+    "type": "woobin",
+    "era": "solo",
+    "title_kr": "첫 틱톡 방송",
+    "title_en": "First TikTok Live",
+    "link": ""
+  },
+  {
+    "date": "2022-11-10",
+    "type": "woobin",
+    "era": "solo",
+    "title_kr": "천체망원경 (Prod. CyA)' 작사 및 작곡 참여",
+    "title_en": "Participated in Lyrics and Composition for '천체망원경 (Prod. CyA)'",
+    "link": "https://on.soundcloud.com/2OiDLfLsP1bjR7PAmv"
+  },
+  {
+    "date": "2022-10-14",
+    "type": "woobin",
+    "era": "solo",
+    "title_kr": "Plan B (Prod. N soul)' 작사 및 작곡 참여",
+    "title_en": "Participated in Lyrics and Composition for 'Plan B (Prod. N soul)'",
+    "link": "https://on.soundcloud.com/PeOrZTdsDkqh6guNvW"
+  },
+  {
+    "date": "2021-07-09",
+    "type": "woobin",
+    "era": "solo",
+    "title_kr": "아무것도 없었다는 듯이 Remix' 작사 및 작곡 참여",
+    "title_en": "Participated in Lyrics and Composition for '아무것도 없었다는 듯이 Remix'",
+    "link": "https://on.soundcloud.com/eYnBHVomdtitiWycFj"
+  },
+  {
+    "date": "2021-05-04",
+    "type": "woobin",
+    "era": "solo",
+    "title_kr": "지박령 (Feat. WOOBIN of LUMINOUS)' 작사 및 작곡 참여",
+    "title_en": "Participated in Lyrics and Composition for '지박령'",
+    "link": "https://on.soundcloud.com/2dA0zUSHXUhBJUDjWr"
+  },
+  {
+    "date": "2022-05-21",
+    "type": "woobin",
+    "era": "solo",
+    "title_kr": "루미너스 1st Single Album 'Wish You Were Here' 컨셉 포토 공개 (우빈)",
+    "title_en": "LUMINOUS 1st Single Album 'Wish You Were Here' Concept Photo Release (WOOBIN)",
+    "link": "https://x.com/LMN_STAFF/status/1527666204520882179?s=20"
+  },
+  {
+    "date": "2022-05-21",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "1st Single Album 'Wish You Were Here' 컨셉 포토 공개 (단체)",
+    "title_en": "1st Single Album 'Wish You Were Here' Concept Photo Release (LUMINOUS)",
+    "link": "https://x.com/LMN_STAFF/status/1527666456334409729?s=20"
+  },
+  {
+    "date": "2022-08-05",
+    "type": "woobin",
+    "era": "solo",
+    "title_kr": "루미너스 1st Full Album\n[LUMINOUS in WONDERLAND] 컨셉 포토 공개 Engine ver. (우빈)",
+    "title_en": "LUMINOUS 1st Full Album\n[LUMINOUS in WONDERLAND] CONCEPT PHOTO Engine ver. Release (WOOBIN)",
+    "link": "https://x.com/LMN_STAFF/status/1555207682293784577?s=20"
+  },
+  {
+    "date": "2022-01-13",
+    "type": "woobin",
+    "era": "solo",
+    "title_kr": "루미너스 2nd Mini ALbum\n[빛과 어둠 사이(Self n Ego)] 컨셉 포토 공개 (우빈)",
+    "title_en": "LUMINOUS 2nd Mini Album\n[Between Light and Darkness (Self n Ego)] Concept Photo Release (Woobin)",
+    "link": "https://x.com/LMN_STAFF/status/1481279811544702979?s=20"
+  },
+  {
+    "date": "2022-08-05",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "1st Full Album\n[LUMINOUS in WONDERLAND] 컨셉 포토 공개 Engine ver. (단체)",
+    "title_en": "LUMINOUS 1st Full Album\n[LUMINOUS in WONDERLAND] Concept Photo ENGINE ver. (LUMINOUS)",
+    "link": "https://x.com/LMN_STAFF/status/1555206931811295232?s=20"
+  },
+  {
+    "date": "2022-08-12",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "LUMINOUS in WONDERLAND' 하이라이트 메들리 공개",
+    "title_en": "LUMINOUS in WONDERLAND' Highlight Medley Release",
+    "link": "https://youtu.be/MKMx0s3sFAI"
+  },
+  {
+    "date": "2022-01-23",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "섬광증(blind)' MINI ALBUM [빛과 어둠 사이 (Self n Ego)] 팬 쇼케이스 영상 공개",
+    "title_en": "Scintillation' Mini Album [Between Light and Darkness (Self n Ego)] Fan Showcase Video",
+    "link": "https://youtu.be/wcurzWmCM_w?si=89Amx55wmtHWibXu"
+  },
+  {
+    "date": "2020-03-02",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "8Letters (Why Don't We) 커버 영상 공개",
+    "title_en": "8Letters (Why Don't We) Cover Release",
+    "link": "https://www.youtube.com/watch?v=nRC4Yi6usBo"
+  },
+  {
+    "date": "2020-03-04",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "Drake - Toosie Slide 댄스 커버 영상 공개",
+    "title_en": "Drake - Toosie Slide Dance Release",
+    "link": "https://www.youtube.com/watch?v=2lfhrkmea_A"
+  },
+  {
+    "date": "2020-06-06",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "Always Remember Us This Way (A Star is born ost - Lady Gaga) With CGV 영상 공개",
+    "title_en": "Always Remember Us This Way (A Star is born ost - Lady Gaga) With CGV Release",
+    "link": "https://www.youtube.com/watch?v=uj-KDQUhYow"
+  },
+  {
+    "date": "2021-07-09",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "Butter - BTS 커버 영상 공개",
+    "title_en": "Butter - BTS Cover Release",
+    "link": "https://www.youtube.com/watch?v=Ptt_-aHs8fk"
+  },
+  {
+    "date": "2021-08-25",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "Kill this love - Black Pink 커버 영상 공개",
+    "title_en": "Kill this love - Black Pink Cover Release",
+    "link": "https://www.youtube.com/watch?v=jGCIEKo56FI"
+  },
+  {
+    "date": "2021-07-30",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "프로필 스케치 공개",
+    "title_en": "Profile Sketch Release",
+    "link": "https://www.youtube.com/watch?v=Iuh407A1MaY"
+  },
+  {
+    "date": "2021-08-13",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "Baby Keem,Travis Scott - Durag Activity 댄스 커버 영상 공개",
+    "title_en": "Baby Keem,Travis Scott - Durag Activity Dance Cover Release",
+    "link": "https://www.youtube.com/watch?v=4zsXgxdhPDc"
+  },
+  {
+    "date": "2025-10-19",
+    "type": "woobin",
+    "era": "solo",
+    "title_kr": "싫더라' 솔로 데뷔 쇼케이스 티켓 예매 오픈",
+    "title_en": "싫더라' Solo Debut Showcase Ticket Sales Open",
+    "link": "https://www.tiktok.com/@binujeong00/photo/7562211309979176210"
+  },
+  {
+    "date": "2025-11-11",
+    "type": "woobin",
+    "era": "solo",
+    "title_kr": "우빈 공식 YouTube 채널 개설",
+    "title_en": "WOOBIN Official YouTube Channel Launch",
+    "link": "https://www.youtube.com/@woobin0401"
+  },
+  {
+    "date": "2025-10-28",
+    "type": "woobin",
+    "era": "solo",
+    "title_kr": "우빈 솔로 데뷔 쇼케이스 온라인 생중계 티켓 예매 오픈",
+    "title_en": "WOOBIN Solo Debut Showcase Livestream Ticket Sales Open",
+    "link": "https://www.tiktok.com/@binujeong00/photo/7566207789664701704"
+  },
+  {
+    "date": "2025-11-06",
+    "type": "woobin",
+    "era": "solo",
+    "title_kr": "싫더라' 발매 기념 MEET&CALL 이벤트 공지",
+    "title_en": "Meet & Call Event for '싫더라' KIT Version Announcement",
+    "link": "https://www.tiktok.com/@binujeong00/photo/7569544597316160776"
+  },
+  {
+    "date": "2021-08-19",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "꿈루(꿈을 꾸는 루미너스)' MV 공개",
+    "title_en": "Dreaming Luminous' MV Release",
+    "link": "https://www.youtube.com/watch?v=sbUiXbHtHKI"
+  },
+  {
+    "date": "2021-09-07",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "Symbol Story Film 공개",
+    "title_en": "Symbol Story Film Release",
+    "link": "https://www.youtube.com/watch?v=J56buxCT_Nc"
+  },
+  {
+    "date": "2021-09-08",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "RUN' MV Teaser 공개",
+    "title_en": "RUN' MV Teaser Release",
+    "link": "https://www.youtube.com/watch?v=H0yszRIWZhc"
+  },
+  {
+    "date": "2021-09-09",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "RUN' MV 공개",
+    "title_en": "RUN' MV Release",
+    "link": "https://www.youtube.com/watch?v=Y7kTjHt7SmI"
+  },
+  {
+    "date": "2021-12-02",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "RUN' 안무 영상 (사복 버전) 공개 ",
+    "title_en": "RUN' Choreography Video (Casual Version) Release ",
+    "link": "https://www.youtube.com/watch?v=c5mKWg6niyM"
+  },
+  {
+    "date": "2021-09-14",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "RUN' MV Performance 버전 공개",
+    "title_en": "RUN' MV Performance Version Release",
+    "link": "https://www.youtube.com/watch?v=r4177e1h4cw"
+  },
+  {
+    "date": "2021-09-21",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "RUN' MV 안무 영상 공개",
+    "title_en": "RUN' MV Choreography Version Release",
+    "link": "https://youtu.be/y0YehA-crLs?si=J4-ZbDieEf3JFeGv"
+  },
+  {
+    "date": "2021-11-02",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "RUN' MV 안무 영상 (Halloween 버전) 공개",
+    "title_en": "RUN Choreography Video (Halloween ver.) Release",
+    "link": "https://www.youtube.com/watch?v=xJbTi6mH1bg"
+  },
+  {
+    "date": "2021-10-18",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "Home Alone' MV 공개",
+    "title_en": "Home Alone' MV Release",
+    "link": "https://www.youtube.com/watch?v=nz_aC7VaiwU"
+  },
+  {
+    "date": "2021-12-24",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "Have Yourself A Merry Little Christmas (re-arranged - WavBox) ver.1' 커버 영상 공개",
+    "title_en": "Have Yourself A Merry Little Christmas (re-arranged - WavBox) ver.1' Cover Video Release",
+    "link": "https://www.youtube.com/watch?v=2_49h5PHtyM"
+  },
+  {
+    "date": "2021-12-25",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "Have Yourself A Merry Little Christmas (re-arranged - WavBox) ver.2' 커버 영상 공개",
+    "title_en": "Have Yourself A Merry Little Christmas (re-arranged - WavBox) ver.2' Cover Video Release",
+    "link": "https://www.youtube.com/watch?v=wVnkSG7A5ys"
+  },
+  {
+    "date": "2022-01-18",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "All Eyes Down (비상)' MV Teaser 공개",
+    "title_en": "All Eyes Down (Advance)' MV Teaser Release",
+    "link": "https://www.youtube.com/watch?v=yFqjSJ1qoGs"
+  },
+  {
+    "date": "2022-01-20",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "All Eyes Down (비상)' MV 공개",
+    "title_en": "All Eyes Down (Advance)' MV Release",
+    "link": "https://www.youtube.com/watch?v=wkeC1r-Db8g"
+  },
+  {
+    "date": "2022-01-24",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "All eyes down(비상)' 안무 영상 공개 (사복 버전)",
+    "title_en": "All Eyes Down (Advance)' Choreography Video (Casual Version) Release ",
+    "link": "https://www.youtube.com/watch?v=w41YzzXO4E4"
+  },
+  {
+    "date": "2022-02-04",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "All eyes down(비상)' MV Performance ver. 공개",
+    "title_en": "All eyes down(비상)' MV Performance ver. Release",
+    "link": "https://www.youtube.com/watch?v=uG5CbXYB6Lk"
+  },
+  {
+    "date": "2022-02-25",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "All eyes down(비상)' 안무 영상 무대의상 ver. 공개 ",
+    "title_en": "All eyes down(비상)' Dance Practice Stage Outfit ver. Release",
+    "link": "https://www.youtube.com/watch?v=fHPdzg52xCg"
+  },
+  {
+    "date": "2022-03-04",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "All eyes down(비상)' Director's cut ver. MV 공개 ",
+    "title_en": "All eyes down(비상)' Director's cut Ver. MV",
+    "link": "https://www.youtube.com/watch?v=Hc84R1nqO0I"
+  },
+  {
+    "date": "2022-12-02",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "LUMINOUS WINTER PARTY 공지",
+    "title_en": "LUMINOUS WINTER PARTY Announcement",
+    "link": "https://x.com/LMN_STAFF/status/1598543483123699713?s=20"
+  },
+  {
+    "date": "2022-12-08",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "LUMINOUS WINTER PARTY 예매 오픈",
+    "title_en": "LUMINOUS WINTER PARTY Ticket Open",
+    "link": "https://x.com/LMN_STAFF/status/1600422363706843138?s=20\n"
+  },
+  {
+    "date": "2022-08-17",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "1st Full Album [LUMINOUS in WONDERLAND] 발매",
+    "title_en": "1st Full Album [LUMINOUS in WONDERLAND] Release",
+    "link": ""
+  },
+  {
+    "date": "2022-05-21",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "1st Single Album [Wish You Were Here] 발매",
+    "title_en": "1st Single Album [Wish You Were Here] Release",
+    "link": ""
+  },
+  {
+    "date": "2022-01-20",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "2nd Mini Album [빛과 어둠 사이 (Self n Ego)] 발매",
+    "title_en": "2nd Mini Album [Between Light and Darkness (Self n Ego)] Release",
+    "link": ""
+  },
+  {
+    "date": "2022-09-09",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "1st Mini Album [YOUTH] 발매",
+    "title_en": "1st Mini Album [YOUTH] Release",
+    "link": ""
+  },
+  {
+    "date": "2021-08-19",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "Pre-Debut EP [꿈루(꿈을 꾸는 루미너스)] 발매",
+    "title_en": "Pre-Debut EP [Dreaming Luminous] Release",
+    "link": ""
+  },
+  {
+    "date": "2022-05-06",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "STAY - The Kid LAROI, Justin Bieber 커버 영상 공개",
+    "title_en": "STAY - The Kid LAROI, Justin Biebe Cover Release",
+    "link": "https://www.youtube.com/watch?v=gAVCvybQtfI"
+  },
+  {
+    "date": "2022-05-21",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "Wish You Were Here' MV Release 공개",
+    "title_en": "Wish You Were Here' MV Release",
+    "link": "https://www.youtube.com/watch?v=jXRDh3IHmq8"
+  },
+  {
+    "date": "2022-08-15",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "1st Full Album [LUMINOUS in WONDERLAND] 'Creature' PREVIEW 영상 공개",
+    "title_en": "1st Full Album [LUMINOUS in WONDERLAND] 'Creature' PREVIEW Video Release",
+    "link": "https://www.youtube.com/watch?v=81ZbaHjo2D0"
+  },
+  {
+    "date": "2022-08-16",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "Engine' MV Teaser 공개",
+    "title_en": "Engine' MV Teaser Release",
+    "link": "https://www.youtube.com/watch?v=hBJboRJx7Ug"
+  },
+  {
+    "date": "2022-08-17",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "Engine' MV 공개",
+    "title_en": "Engine' MV Release",
+    "link": "https://www.youtube.com/watch?v=aS5PSYIs-Gs"
+  },
+  {
+    "date": "2022-10-19",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "Engine' 안무 영상 공개 (사복 버전)",
+    "title_en": "Engine' Choreography Video (Casual Version) Release",
+    "link": "https://www.youtube.com/watch?v=fbRExxI039c"
+  },
+  {
+    "date": "2022-11-11",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "Creature' 스페셜 안무 연습 영상 공개 (파자마 버전)",
+    "title_en": " 'Creature'  Special Dance Practice Video (Pajama Ver.) Release",
+    "link": "https://www.youtube.com/watch?v=mzHjpP3lm_E&t=8s"
+  },
+  {
+    "date": "2023-01-27",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "Want it more?' 안무 영상 공개",
+    "title_en": "Want it more?' Dance Practice",
+    "link": "https://www.youtube.com/watch?v=EvekPulhElY"
+  },
+  {
+    "date": "2023-04-18",
+    "type": "concert",
+    "era": "luminous",
+    "title_kr": "EUROPE TOUR 2023 개최 (루마니아 부쿠레슈티, Sala Luceafărul)",
+    "title_en": "EUROPE TOUR 2023 - Sala Luceafărul, Bucharest / Romania",
+    "link": ""
+  },
+  {
+    "date": "2023-04-20",
+    "type": "concert",
+    "era": "luminous",
+    "title_kr": "EUROPE TOUR 2023 개최 (이탈리아 밀라노, DI4 – Distretto Industriale 4)",
+    "title_en": "EUROPE TOUR 2023 - Milano, Italy / DI4 – Distretto Industriale 4",
+    "link": ""
+  },
+  {
+    "date": "2023-04-22",
+    "type": "concert",
+    "era": "luminous",
+    "title_kr": "EUROPE TOUR 2023 개최 (스위스 제네바, Alhambra)",
+    "title_en": "EUROPE TOUR 2023 - Geneve, Switzerland / Alhambra",
+    "link": ""
+  },
+  {
+    "date": "2023-04-23",
+    "type": "concert",
+    "era": "luminous",
+    "title_kr": "EUROPE TOUR 2023 개최 (프랑스 툴롱, Mangazur)",
+    "title_en": "EUROPE TOUR 2023 - Toulon, France / Mangazur",
+    "link": ""
+  },
+  {
+    "date": "2023-04-25",
+    "type": "concert",
+    "era": "luminous",
+    "title_kr": "EUROPE TOUR 2023 개최 (헝가리 부다페스트, Barba Negra)",
+    "title_en": "EUROPE TOUR 2023 - Barba Negra, Budapest / Hungary",
+    "link": ""
+  },
+  {
+    "date": "2023-04-26",
+    "type": "concert",
+    "era": "luminous",
+    "title_kr": "EUROPE TOUR 2023 개최 (폴란드 바르샤바, Hybrydy Klub)",
+    "title_en": "EUROPE TOUR 2023 - Hybrydy Klub, Warsaw / Poland",
+    "link": ""
+  },
+  {
+    "date": "2023-04-27",
+    "type": "concert",
+    "era": "luminous",
+    "title_kr": "EUROPE TOUR 2023 개최 (체코 프라하, Palac Akropolis)",
+    "title_en": "EUROPE TOUR 2023 - Palac Akropolis, Prague / Czech Republic",
+    "link": ""
+  },
+  {
+    "date": "2023-10-13",
+    "type": "concert",
+    "era": "luminous",
+    "title_kr": "Second Europe Tour 2023 개최 (스페인 마드리드)",
+    "title_en": "Second Europe Tour 2023 - Spain/Madrid ",
+    "link": ""
+  },
+  {
+    "date": "2023-10-14",
+    "type": "concert",
+    "era": "luminous",
+    "title_kr": "Second Europe Tour 2023 개최 (포르투갈 리스본)",
+    "title_en": "Second Europe Tour 2023 - Portugal/Lisbon",
+    "link": ""
+  },
+  {
+    "date": "2023-10-15",
+    "type": "concert",
+    "era": "luminous",
+    "title_kr": "Second Europe Tour 2023 개최 (영국 런던)",
+    "title_en": "Second Europe Tour 2023 - United Kingdom/London",
+    "link": ""
+  },
+  {
+    "date": "2023-10-17",
+    "type": "concert",
+    "era": "luminous",
+    "title_kr": "Second Europe Tour 2023 개최 (그리스 아테네)",
+    "title_en": "Second Europe Tour 2023 - Greece/Athens",
+    "link": ""
+  },
+  {
+    "date": "2023-10-19",
+    "type": "concert",
+    "era": "luminous",
+    "title_kr": "Second Europe Tour 2023 개최 (헝가리 부다페스트)",
+    "title_en": "Second Europe Tour 2023 - Hungary/Budapest",
+    "link": ""
+  },
+  {
+    "date": "2023-10-22",
+    "type": "concert",
+    "era": "luminous",
+    "title_kr": "Second Europe Tour 2023 개최 (체코 프라하)",
+    "title_en": "Second Europe Tour 2023 - Czech/Prague",
+    "link": ""
+  },
+  {
+    "date": "2023-10-23",
+    "type": "concert",
+    "era": "luminous",
+    "title_kr": "Second Europe Tour 2023 개최 (폴란드 바르샤바)",
+    "title_en": "Second Europe Tour 2023 - Poland/Warszawa",
+    "link": ""
+  },
+  {
+    "date": "2023-10-25",
+    "type": "concert",
+    "era": "luminous",
+    "title_kr": "Second Europe Tour 2023 개최 (독일 프랑크푸르트)",
+    "title_en": "Second Europe Tour 2023 - Germany/Frankfurt",
+    "link": ""
+  },
+  {
+    "date": "2023-10-29",
+    "type": "concert",
+    "era": "luminous",
+    "title_kr": "Second Europe Tour 2023 개최 (프랑스 파리)",
+    "title_en": "Second Europe Tour 2023 - France/Paris",
+    "link": ""
+  },
+  {
+    "date": "2022-01-19",
+    "type": "showcase",
+    "era": "luminous",
+    "title_kr": "2ND MINI ALBUM [빛과 어둠 사이 (Self n Ego)] 발매 기념 쇼케이스 개최",
+    "title_en": "2nd Mini Album [Between Light and Darkness (Self n Ego)] Release Showcase",
+    "link": ""
+  },
+  {
+    "date": "2022-01-11",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "2ND MINI ALBUM [빛과 어둠 사이 (Self n Ego)] 발매 기념 쇼케이스 안내",
+    "title_en": "2nd Mini Album [Between Light and Darkness (Self n Ego)] Release Showcase Announcement",
+    "link": "https://x.com/LMN_STAFF/status/1480819410311221249?s=20"
+  },
+  {
+    "date": "2022-08-09",
+    "type": "luminous",
+    "era": "luminous",
+    "title_kr": "1ST FULL ALBUM [LUMINOUS in WONDERLAND] 발매 기념 팬쇼케이스 안내",
+    "title_en": "1st Full Album [LUMINOUS in WONDERLAND] Release Showcase Announcement",
+    "link": "https://x.com/LMN_STAFF/status/1556902049488351232?s=20"
+  },
+  {
+    "date": "2022-08-17",
+    "type": "showcase",
+    "era": "luminous",
+    "title_kr": "1ST FULL ALBUM [LUMINOUS in WONDERLAND] 발매 기념 팬쇼케이스 개최",
+    "title_en": "1st Full Album [LUMINOUS in WONDERLAND] Release Showcase",
+    "link": ""
+  }
+]

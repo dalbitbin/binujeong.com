@@ -672,6 +672,23 @@ body.modal-open {
 .dot-luminous{ background: #5C7DA5; } /* desat blue */
 .dot-anniv{ background: #8A6FA8; }    /* muted purple */
 .dot-live{ background: #777777; }     /* gray */
+.dot-showcase { background: #6fa89c;}
+.dot-concert { background: #a87b6f;}
+
+/* calendar coloring */
+.calendar-day.type-showcase {
+  color: #6fa89c;
+}
+.calendar-day.type-showcase::before {
+  background: #6fa89c;
+}
+
+.calendar-day.type-concert {
+  color: #a87b6f;
+}
+.calendar-day.type-concert::before {
+  background: #a87b6f;
+}
 
 /* ---- Timeline ---- */
 .archive-card{

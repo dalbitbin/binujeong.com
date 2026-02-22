@@ -1,8 +1,8 @@
 import csv
 import json
 
-csv_file = 'discog.csv'
-json_file = 'discog.json'
+csv_file = 'timeline.csv'
+json_file = 'archive.json'
 
 data = []
 with open(csv_file, encoding='utf-8') as f:

@@ -54,11 +54,20 @@ function dotClass(type){
   if(type === "woobin") return "dot-woobin";
   if(type === "luminous") return "dot-luminous";
   if(type === "anniv" || type === "anniversary") return "dot-anniv";
+  if(type === "concert") return "dot-concert";
+  if(type === "showcase") return "dot-showcase";
   return "dot-live";
 }
 
 // calendar priority (color for the day)
-const TYPE_PRIORITY = { anniversary: 4, anniv: 4, woobin: 3, luminous: 2, live: 1 };
+const TYPE_PRIORITY = {
+  anniversary: 5,
+  showcase: 4,
+  concert: 4,
+  woobin: 3,
+  luminous: 2,
+  live: 1
+};
 
 function primaryTypeForDay(evs){
   return evs
@@ -240,7 +249,7 @@ window.setLang = function(lang){
 fetch("archive.json")
   .then(r => r.json())
   .then(data => {
-    ALL_EVENTS = data.events || [];
+    ALL_EVENTS = Array.isArray(data) ? data : (data.events || []);
 
     renderWeekdays();
 
