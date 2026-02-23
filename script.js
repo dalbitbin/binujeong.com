@@ -66,7 +66,7 @@ function updateLinksForLang() {
   });
 }
 
-// Global function for dropdown/buttons
+/*Global function for dropdown/buttons
 window.setLang = function (lang) {
   if (lang !== "kr" && lang !== "en") return;
   currentLang = lang;
@@ -84,4 +84,4 @@ window.setLang = function (lang) {
 document.addEventListener("DOMContentLoaded", () => {
   updateLinksForLang();
   if (typeof updateLangLabels === "function") updateLangLabels();
-});
+});*/
