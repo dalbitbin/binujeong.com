@@ -179,7 +179,7 @@ function openEventModal(dateIso, eventsForDay){
            ${hasLink ? `data-link="${ev.link}"` : ""}>
         <span class="legend-dot ${dotClass(ev.type)}" style="margin-top:6px;"></span>
         <div>
-          <div style="letter-spacing:0.12rem; font-size:0.85rem; color: rgba(255,255,255,0.92);">${getTitle(ev)}</div>
+          <div style="letter-spacing:0.05rem; font-size:0.85rem; color: rgba(255,255,255,0.92);">${getTitle(ev)}</div>
         </div>
       </div>
     `;
