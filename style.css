@@ -78,7 +78,7 @@ html, body {
 
 
 /* Mobile adjustments */
-@media (max-width: 978px) {
+@media (max-width: 900px) {
   .navbar-nav {
     flex-direction: column;
     gap: 12px;
@@ -136,6 +136,7 @@ html, body {
   opacity: 0.6;
   scale: 110%;
 }
+
 
 
 .other-page{
@@ -345,7 +346,7 @@ html, body {
 }
 
 /* Mobile: list layout */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .discography-section {
     padding-top: 96px;
   }
@@ -492,7 +493,7 @@ body.modal-open {
   border-color: #fff;
   background: transparent;
   border: 1;
-  padding: 7px 20px;
+  padding: 7px 16px;
   font-weight: 600;
 }
 
@@ -502,8 +503,7 @@ body.modal-open {
 
 .mobile-full-image {
   width: 90%;
-  height: 70vh;
-  padding-top:4%;
+  height: 60vh;
   object-fit: contain;
   object-position: center;
 }
@@ -590,7 +590,7 @@ body.modal-open {
 
 
 /* Mobile: list layout */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .video-section {
     padding-top: 96px;
   
@@ -885,7 +885,7 @@ body.modal-open {
 }
 
 /* Mobile */
-@media (max-width: 768px){
+@media (max-width: 900px){
   .archive-card, .calendar-card{
     padding: 16px;
     border-radius: 10px;
@@ -917,7 +917,7 @@ body.modal-open {
 }
 
 .lang-menu .dropdown-item {
-  color: rgba(255,255,255,0.85);
+  color: transparent;
   letter-spacing: 0.12rem;
   font-weight: 600;
   padding: 10px 12px;

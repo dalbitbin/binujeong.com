@@ -29,45 +29,44 @@ fetch("gallery.json")
 // ===================== RENDER GALLERY PAGE =====================
 function renderGalleryPage() {
   galleryGrid.innerHTML = "";
+
   const start = (currentPage - 1) * imagesPerPage;
   const end = start + imagesPerPage;
+
   galleryData.slice(start, end).forEach((item, index) => {
     const col = document.createElement("div");
     col.className = "col-6 col-md-3 mb-3"; // 4x4 grid
+
     col.innerHTML = `
       <div class="gallery-card">
-        <img src="assets/images/gallery/${item.img}" class="img-fluid" alt="${item.caption}">
+        <img src="assets/images/gallery/${item.img}" class="img-fluid" alt="${item.caption || ""}">
       </div>
     `;
+
     galleryGrid.appendChild(col);
 
-    // Open carousel at correct index
     col.querySelector("img").addEventListener("click", () => {
-
       if (window.innerWidth <= 768) {
         // MOBILE VIEWER
         const img = document.getElementById("mobileImageView");
         img.src = `assets/images/gallery/${item.img}`;
 
-        new bootstrap.Modal(
-          document.getElementById("mobileImageModal")
-        ).show();
-
+        new bootstrap.Modal(document.getElementById("mobileImageModal")).show();
       } else {
         // DESKTOP CAROUSEL
-        const carousel = new bootstrap.Carousel(
-          document.getElementById("galleryCarousel")
-        );
+        const carouselEl = document.getElementById("galleryCarousel");
+
+        // Get or create carousel instance
+        let carousel = bootstrap.Carousel.getInstance(carouselEl);
+        if (!carousel) carousel = new bootstrap.Carousel(carouselEl);
 
         carousel.to(start + index);
 
-        new bootstrap.Modal(
-          document.getElementById("galleryModal")
-        ).show();
+        new bootstrap.Modal(document.getElementById("galleryModal")).show();
       }
     });
-   }); // <-- close forEach
-   } // <-- close forEach
+  });
+}
 
 // ===================== POPULATE CAROUSEL =====================
 function populateCarousel() {
