@@ -1,9 +1,45 @@
-{
-  "events": [
-    {
-      "date": "2025-11-14",
-      "type": "live",
-      "title": "TikTok LIVE"
-    }
-  ]
-}
+[
+  { "date": "2026-02-14", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2026-02-12", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2026-02-11", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2026-02-10", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2026-02-07", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2026-02-05", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2026-02-04", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2026-02-01", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2026-01-31", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2026-01-29", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2026-01-28", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2026-01-27", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2026-01-25", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2026-01-24", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2026-01-21", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2026-01-17", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2026-01-16", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2026-01-14", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2026-01-13", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2026-01-12", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2026-01-09", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2026-01-08", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2026-01-07", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2026-01-06", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2026-01-05", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2026-01-03", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2025-12-31", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2025-12-29", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2025-12-25", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2025-12-24", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2025-12-23", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2025-12-19", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2025-12-16", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2025-12-12", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2025-12-10", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2025-12-07", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2025-12-06", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2025-12-03", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2025-12-02", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2025-12-01", "era": "solo", "title_kr": "TikTok LIVE" }
+  ,
+  { "date": "2025-11-27", "era": "solo", "title_kr": "TikTok LIVE" },
+  { "date": "2025-11-26", "era": "solo", "title_kr": "TikTok LIVE" }
+]

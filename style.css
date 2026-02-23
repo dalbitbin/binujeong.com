@@ -227,7 +227,7 @@ html, body {
 }
 
 .full-menu a:hover {
-  color: #5f2670;
+  color: #7046b4;
 }
 
 /* PROFILE CSS */
@@ -668,11 +668,11 @@ body.modal-open {
 }
 
 /* category colors tuned for #1b1b1b */
-.dot-woobin{ background: #8A6FA8 }   /* gold */
+.dot-woobin{ background: #7046b4 }   /* gold */
 .dot-luminous{ background: #5C7DA5; } /* desat blue */
 .dot-anniv{ background: #D4AF37; }    /* muted purple */
-.dot-live{ background: #777777; }     /* gray */
-.dot-showcase { background: #6fa89c;}
+.dot-live{ background: #393939; }     /* gray */
+.dot-showcase { background: #4377b7;}
 .dot-concert { background: #a87b6f;}
 
 /* calendar coloring */
@@ -799,10 +799,11 @@ body.modal-open {
 
 /* category coloring (circle + number) */
 
-.calendar-day.type-woobin::before{ background:#8A6FA8; }
+.calendar-day.type-woobin::before{ background:#7046b4; }
 .calendar-day.type-luminous::before{ background:#5C7DA5; }
 .calendar-day.type-anniv::before{ background:#D4AF37; }
-.calendar-day.type-live::before{ background:#777777; }
+.calendar-day.type-anniversary::before{ background:#D4AF37; }
+.calendar-day.type-live::before{ background:#393939; }
 
 /* If multiple types collide, show a ring for “secondary” */
 .calendar-day.multi::after{
@@ -875,13 +876,16 @@ body.modal-open {
   padding: 6px 0 8px;
 }
 
-.archive-item.clickable {
-  cursor: pointer;
-}
 
-.archive-item.clickable:hover {
-  opacity: 0.7;
-  font-weight: 300;
+.archive-link{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 400;
+}
+.archive-link:hover{
+  opacity: 0.75;
+  letter-spacing: 0.05rem;
 }
 
 /* Mobile */
