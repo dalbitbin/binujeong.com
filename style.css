@@ -237,10 +237,11 @@ html, body {
   display: flex;
   align-items: center;
   color:#cccccc;
+  margin-top:5rem;
 }
 
 .profile-image-wrapper {
-  aspect-ratio: 1 / 1; /* Keeps image square */
+  aspect-ratio: 3/4; /* Keeps image square */
   overflow: hidden;
 }
 
@@ -271,11 +272,29 @@ html, body {
   z-index: 500;
 }
 
-
 .profile-description {
   font-size: 1rem;
   line-height: 1.8;
   max-width: 500px;
+}
+
+.label {
+  font-weight: 600;
+  margin-right: 6px;
+}
+
+.section-title {
+  font-weight: 700;
+  margin-top: 16px;
+}
+.profile-description ul {
+  list-style: none;   /* remove default bullets */
+  padding-left: 0;
+  margin: 6px 0 12px 20px;
+}
+
+.profile-description li::before {
+  content: "– ";
 }
 
 .intro{
