@@ -321,8 +321,15 @@ html, body {
 .album-section{
   color: #cccccc;
 }
+.album-section img,
+#solo-grid img,
+#luminous-grid img {
+  border-radius: 12px;
+  overflow: hidden;
+}
 .album-card{
   cursor: pointer;
+  
 }
 .album-card-info {
   font-size: 0.9rem;
@@ -353,6 +360,7 @@ html, body {
 .discography-section {
   padding-top: 10%;
   padding-bottom: 10%;
+  
 }
 .discography-section h1 {
   letter-spacing: 0.5rem;
