@@ -334,6 +334,7 @@ html, body {
 .album-section{
   color: #cccccc;
 }
+<<<<<<< HEAD
 
 .album-section img,
 #solo-grid img,
@@ -342,6 +343,14 @@ html, body {
   overflow: hidden;
 }
 
+=======
+.album-section img,
+#solo-grid img,
+#luminous-grid img {
+  border-radius: 12px;
+  overflow: hidden;
+}
+>>>>>>> f451d6fcb4a2c243e83f60f8759d6a802ded833e
 .album-card{
   cursor: pointer;
   
@@ -381,7 +390,11 @@ html, body {
 .discography-section {
   padding-top: 10%;
   padding-bottom: 10%;
+<<<<<<< HEAD
   border-radius: 14px;
+=======
+  
+>>>>>>> f451d6fcb4a2c243e83f60f8759d6a802ded833e
 }
 .discography-section h1 {
   letter-spacing: 0.5rem;
