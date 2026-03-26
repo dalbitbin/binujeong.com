@@ -40,13 +40,25 @@
     <div class="flex-grow-1"></div>
 
     <!-- Desktop Menu -->
-      <div class="nav-menu d-none d-lg-flex gap-4 align-items-center">
-        <a href="profile.html">PROFILE</a>
-        <a href="discography.html">DISCOGRAPHY</a>
-        <a href="gallery.html">GALLERY</a>
-        <a href="video.html">VIDEO</a>
-        <a href="archive.html">ARCHIVE</a>
+      <div class="nav-menu d-none d-lg-flex gap-4 align-items-center pe-2">
+        <a href="profile.html" class="js-lang-link">PROFILE</a>
+        <a href="discography.html" class="js-lang-link">DISCOGRAPHY</a>
+        <a href="gallery.html" class="js-lang-link">GALLERY</a>
+        <a href="video.html" class="js-lang-link">VIDEO</a>
+        <a href="archive.html" class="js-lang-link">ARCHIVE</a>
       </div>
+
+    <!-- Trans toggle -->
+    <div class="lang-dropdown ms-4 pe-3">
+      <button class="lang-current" id="langToggle" type="button">
+        KR <i class="bi bi-caret-down-fill"></i>
+      </button>
+
+      <div class="lang-menu" id="langMenu">
+        <div class="lang-item" data-lang="kr">KR</div>
+        <div class="lang-item" data-lang="en">EN</div>
+      </div>
+    </div>
 
     <!-- Mobile Hamburger -->
     <button class="menu-toggle d-lg-none" type="button"
@@ -81,11 +93,14 @@
      id="mainMenu">
 
   <div class="offcanvas-body d-flex flex-column justify-content-center align-items-center text-center">
-        <a href="profile.html">PROFILE</a>
-        <a href="discography.html">DISCOGRAPHY</a>
-        <a href="gallery.html">GALLERY</a>
-        <a href="video.html">VIDEO</a>
-        <a href="archive.html">ARCHIVE</a>
+
+        <a href="profile.html" class="js-lang-link">PROFILE</a>
+        <a href="discography.html" class="js-lang-link">DISCOGRAPHY</a>
+        <a href="gallery.html" class="js-lang-link">GALLERY</a>
+        <a href="video.html" class="js-lang-link">VIDEO</a>
+        <a href="archive.html" class="js-lang-link">ARCHIVE</a>
+
+
     <!-- Mobile Social -->
     <div class="d-flex justify-content-center gap-5">
       <a href="https://youtube.com/@woobin0401" target="_blank">
@@ -131,12 +146,35 @@
           <div class="calendar-grid mt-1" id="cal-days"></div>
 
           <div class="archive-legend mt-3 px-3">
-            <span class="legend-item"><span class="legend-dot dot-woobin"></span>WOOBIN</span>
-            <span class="legend-item"><span class="legend-dot dot-luminous"></span>LUMINOUS</span>
-            <span class="legend-item"><span class="legend-dot dot-anniv"></span>ANNIVERSARY</span>
-            <span class="legend-item"><span class="legend-dot dot-concert"></span>CONCERT</span>
-            <span class="legend-item"><span class="legend-dot dot-showcase"></span>SHOWCASE</span>
-            <span class="legend-item"><span class="legend-dot dot-live"></span>TIKTOK LIVE</span>
+            <span class="legend-item">
+              <span class="legend-dot dot-woobin"></span>
+              <span data-i18n="archive_legend_woobin">WOOBIN</span>
+            </span>
+
+            <span class="legend-item">
+              <span class="legend-dot dot-luminous"></span>
+              <span data-i18n="archive_legend_luminous">LUMINOUS</span>
+            </span>
+
+            <span class="legend-item">
+              <span class="legend-dot dot-anniv"></span>
+              <span data-i18n="archive_legend_anniversary">ANNIVERSARY</span>
+            </span>
+
+            <span class="legend-item">
+              <span class="legend-dot dot-concert"></span>
+              <span data-i18n="archive_legend_concert">CONCERT</span>
+            </span>
+
+            <span class="legend-item">
+              <span class="legend-dot dot-showcase"></span>
+              <span data-i18n="archive_legend_showcase">SHOWCASE</span>
+            </span>
+
+            <span class="legend-item">
+              <span class="legend-dot dot-live"></span>
+              <span data-i18n="archive_legend_tiktok_live">TIKTOK LIVE</span>
+            </span>
           </div>
         </div>
       </div>
@@ -145,14 +183,16 @@
       <div class="col-12 col-lg-6">
         <div class="archive-card">
           <div class="archive-era">
-            <div class="archive-era-title text-center">WOOBIN (전체 활동)<br><span class ="sub-date">(2019–현재)</span></div>
+            <div class="archive-era-title text-center"><span data-i18n="archive_timeline_woobin">WOOBIN (전체 활동)</span><br>
+              <span class ="sub-date" data-i18n="archive_timeline_woobin_years">(2019–현재)</span></div>
             <div id="timeline-solo"></div>
           </div>
         </div>
 
         <div class="archive-card mt-4">
           <div class="archive-era">
-            <div class="archive-era-title text-center">LUMINOUS (그룹 활동)<br><span class ="sub-date">(2019-2025)</span></div>
+            <div class="archive-era-title text-center"><span data-i18n="archive_timeline_luminous">LUMINOUS (그룹 활동)</span><br>
+              <span class ="sub-date">(2019-2025)</span></div>
             <div id="timeline-luminous"></div>
           </div>
         </div>
@@ -178,9 +218,11 @@
 
 
 <!-- ================= SCRIPT ================= -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-<script src="archive.js"></script>
-<script scr="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="script.js"></script>
+ <script src="archive.js"></script>
+
+
 
 
 <!-- ================= FOOTER ================= -->

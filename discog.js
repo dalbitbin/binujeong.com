@@ -1,3 +1,7 @@
+let discogData = [];
+let soloAlbums = [];
+let luminousAlbums = [];
+
 // Get lang from URL
 function getLangFromURL() {
   const params = new URLSearchParams(window.location.search);
@@ -27,19 +31,27 @@ const luminousGrid = document.getElementById("luminous-grid");
 fetch("discog.json")
   .then(res => res.json())
   .then(data => {
+    discogData = data;
 
-    // Separate SOLO and LUMINOUS albums
-    const soloAlbums = data.filter(album => album.id.startsWith("wb"));
-    const luminousAlbums = data.filter(album => album.id.startsWith("lmn"));
+    soloAlbums = data.filter(album => album.id.startsWith("wb"));
+    luminousAlbums = data.filter(album => album.id.startsWith("lmn"));
 
-    // Populate grids
-    soloAlbums.forEach(album => soloGrid.appendChild(createAlbumCard(album)));
-    luminousAlbums.forEach(album => luminousGrid.appendChild(createAlbumCard(album)));
-
-    // Set first album as default active
-    if (soloAlbums.length > 0) setActiveAlbum(soloAlbums[0], false);
+    renderAll();
   })
+  
   .catch(err => console.error("Failed to load discography JSON:", err));
+
+  function renderAll() {
+  soloGrid.innerHTML = "";
+  luminousGrid.innerHTML = "";
+
+  soloAlbums.forEach(album => soloGrid.appendChild(createAlbumCard(album)));
+  luminousAlbums.forEach(album => luminousGrid.appendChild(createAlbumCard(album)));
+
+  if (soloAlbums.length > 0) {
+    setActiveAlbum(soloAlbums[0], false);
+  }
+}
 
 // ===================== CREATE CARD =====================
 function createAlbumCard(album) {
@@ -66,7 +78,7 @@ function createAlbumCard(album) {
 function setActiveAlbum(album, shouldScroll = true) {
   activeAlbum.querySelector("img").src = `assets/images/albums/${album.album_img}`;
   activeAlbum.querySelector(".album-date").textContent = album.date;
-  activeAlbum.querySelector(".album-title").textContent = album["title_" + currentLang];
+  activeAlbum.querySelector(".album-title").innerHTML  = album["title_" + currentLang];
   activeAlbum.querySelector(".album-type").textContent = album["artist_" + currentLang] + " " + " · " + album.type;
   activeAlbum.querySelector(".album-description").innerHTML = album["desc_" + currentLang];
   activeAlbum.querySelector(".album-tracklist").innerHTML = album["track_" + currentLang];
@@ -76,3 +88,9 @@ function setActiveAlbum(album, shouldScroll = true) {
 }
 
 }
+
+window.setDiscogLang = function(lang) {
+  currentLang = lang;
+  renderAll();
+};
+

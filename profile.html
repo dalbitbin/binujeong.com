@@ -41,13 +41,25 @@
     <div class="flex-grow-1"></div>
 
     <!-- Desktop Menu -->
-      <div class="nav-menu d-none d-lg-flex gap-4 align-items-center">
-        <a href="profile.html">PROFILE</a>
-        <a href="discography.html">DISCOGRAPHY</a>
-        <a href="gallery.html">GALLERY</a>
-        <a href="video.html">VIDEO</a>
-        <a href="archive.html">ARCHIVE</a>
+      <div class="nav-menu d-none d-lg-flex gap-4 align-items-center pe-2">
+        <a href="profile.html" class="js-lang-link">PROFILE</a>
+        <a href="discography.html" class="js-lang-link">DISCOGRAPHY</a>
+        <a href="gallery.html" class="js-lang-link">GALLERY</a>
+        <a href="video.html" class="js-lang-link">VIDEO</a>
+        <a href="archive.html" class="js-lang-link">ARCHIVE</a>
       </div>
+
+    <!-- Trans toggle -->
+    <div class="lang-dropdown ms-4 pe-3">
+      <button class="lang-current" id="langToggle" type="button">
+        KR <i class="bi bi-caret-down-fill"></i>
+      </button>
+
+      <div class="lang-menu" id="langMenu">
+        <div class="lang-item" data-lang="kr">KR</div>
+        <div class="lang-item" data-lang="en">EN</div>
+      </div>
+    </div>
 
     <!-- Mobile Hamburger -->
     <button class="menu-toggle d-lg-none" type="button"
@@ -84,11 +96,11 @@
 
   <div class="offcanvas-body d-flex flex-column justify-content-center align-items-center text-center">
 
-        <a href="profile.html">PROFILE</a>
-        <a href="discography.html">DISCOGRAPHY</a>
-        <a href="gallery.html">GALLERY</a>
-        <a href="video.html">VIDEO</a>
-        <a href="archive.html">ARCHIVE</a>
+        <a href="profile.html" class="js-lang-link">PROFILE</a>
+        <a href="discography.html" class="js-lang-link">DISCOGRAPHY</a>
+        <a href="gallery.html" class="js-lang-link">GALLERY</a>
+        <a href="video.html" class="js-lang-link">VIDEO</a>
+        <a href="archive.html" class="js-lang-link">ARCHIVE</a>
 
     <!-- Mobile Social -->
     <div class="d-flex justify-content-center gap-5">
@@ -125,34 +137,34 @@
       </div>
 
       <!-- Right: Text Content -->
-      <div class="col-md-7">
+      <div class="col-md-7 ps-md-5">
         <h1 class="profile-name">WOOBIN <span class ="kr-name">(우빈)</span></h1>
         <hr class="profile-divider">
           <div class="profile-description">
-            <div><span class="label">본명</span> 정우빈</div>
-            <div><span class="label">출생</span> 2000.04.01</div>
-            <div><span class="label">그룹 데뷔</span> 2021.09.09 (루미너스)</div>
-            <div><span class="label">솔로 데뷔</span> 2025.11.15</div>
-            <div><span class="label">활동 기간</span> 2019년–현재</div>
-            <span class="section-title">소속사</span>
+            <div><span class="label" data-i18n="profile_name_label">본명</span> <span data-i18n="profile_name_value">정우빈</span></div>
+            <div><span class="label" data-i18n="profile_birth">출생</span> <span data-i18n="profile_birth_value">2000.04.01</span></div>
+            <div><span class="label" data-i18n="profile_group_debut">그룹 데뷔</span> <span data-i18n="profile_group_debut_value">2021.09.09 (루미너스)</span></div>
+            <div><span class="label" data-i18n="profile_solo_debut">솔로 데뷔</span> <span data-i18n="profile_solo_debut_value">2025.11.15</span></div>
+            <div><span class="label" data-i18n="profile_active_years">활동 기간</span> <span data-i18n="profile_active_years_value">2019년–현재</span></div>
+          <span class="section-title" data-i18n="profile_agency">소속사</span>
             <ul>
-              <li>무소속 (2025년–현재)</li>
-              <li>EVA엔터테인먼트 (2024년–2025년)</li>
-              <li>SE그룹엔터테인먼트 (2020년–2024년)</li>
-              <li>DS엔터테인먼트 (2019년)</li>
+              <li data-i18n="profile_agency_1">무소속 (2025년–현재)</li>
+              <li data-i18n="profile_agency_2">EVA엔터테인먼트 (2024년–2025년)</li>
+              <li data-i18n="profile_agency_3">SE그룹엔터테인먼트 (2020년–2024년)</li>
+              <li data-i18n="profile_agency_4">DS엔터테인먼트 (2019년)</li>
             </ul>
 
-            <span class="section-title">활동 그룹</span>
+            <span class="section-title" data-i18n="profile_groups">활동 그룹</span>
             <ul>
-              <li>루미너스</li>
-              <li>NAMED LATE</li>
-              <li>DSBOYS</li>
+              <li data-i18n="profile_group_1">루미너스</li>
+              <li data-i18n="profile_group_2">NAMED LATE</li>
+              <li data-i18n="profile_group_3">DSBOYS</li>
             </ul>
 
           </div>
         <hr class="profile-divider">
-        <p class ="profile-artist">
-          <span class = "intro">아티스트 소개</span><br><br>
+         <span class="intro" data-i18n="profile_intro_title">아티스트 소개</span>
+         <p class="profile-artist" data-i18n="profile_intro_desc">
           우빈 (WOOBIN) 은 대한민국의 가수이자 보컬리스트다.<br>
           보이그룹 루미너스(LUMINOUS) 의 메인보컬로 데뷔하여<br>
           다양한 앨범과 무대를 통해 탄탄한 보컬 실력과 감정 표현력을 선보였다.<br><br>

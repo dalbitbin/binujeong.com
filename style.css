@@ -240,8 +240,15 @@ html, body {
   margin-top:5rem;
 }
 
+.intro {
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
 .profile-image-wrapper {
-  aspect-ratio: 3/4; /* Keeps image square */
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+   object-position: 35% 35%;
   overflow: hidden;
 }
 
@@ -267,9 +274,8 @@ html, body {
 .profile-divider {
   width: 100%;
   height: 1px;
-  background-color: #a0a0a0;
-  margin: 20px 0;
-  z-index: 500;
+  background-color: rgba(255,255,255,0.15);
+  margin: 24px 0;
 }
 
 .profile-description {
@@ -302,27 +308,43 @@ html, body {
   font-weight: 700;
   color: #fff;
   letter-spacing: 0.15rem;
+  
 }
 
-.intro-date{
-  font-size: 0.9rem;
+.intro-date {
+  display: block;
+  margin-top: 14px;
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  color: #9a9a9a;
+}
+
+.intro-date [data-i18n="discog_release_date"] {
+  color: #d7d7d7;
   font-weight: 700;
-  color: #fff;
-  letter-spacing: 0.15rem;
 }
-.intro-date .album-date{
-  font-size: 0.8rem;
-  font-weight: 200;
-  color: #fff;
-  letter-spacing: 0.1rem;
+
+.album-date {
+  color: #9a9a9a;
+  margin-left: 4px;
 }
+
 /*--------- DISCOGRAPHY -------------*/
 
 .album-section{
   color: #cccccc;
 }
+
+.album-section img,
+#solo-grid img,
+#luminous-grid img {
+  border-radius: 14px;
+  overflow: hidden;
+}
+
 .album-card{
   cursor: pointer;
+  
 }
 .album-card-info {
   font-size: 0.9rem;
@@ -331,11 +353,17 @@ html, body {
   gap: 2px; /* small space between title and date */
 }
 
+.album-description {
+  line-height: 1.7;
+}
+
 .album-title{
   color:#fff;
   font-weight: 700;
   letter-spacing: 0.2rem;
   font-size: 2.2rem;
+  margin-top: 12px;
+  line-height: 1.2;
 }
 
 .album-title-sm {
@@ -353,6 +381,7 @@ html, body {
 .discography-section {
   padding-top: 10%;
   padding-bottom: 10%;
+  border-radius: 14px;
 }
 .discography-section h1 {
   letter-spacing: 0.5rem;
@@ -381,9 +410,11 @@ html, body {
   letter-spacing: 0.3rem;
   font-weight: 600;
   font-size: 1.1rem;
+  }
+  .intro-date {
+    margin-top: 14px;
+  }
 }
-}
-
 /*--------- GALLERY -------------*/
 .gallery-section{
   padding-top: 96px; /* so navbar doesn't cut off */
@@ -932,32 +963,68 @@ body.modal-open {
 
 /* ====== CURRENT LANG ======== */
 /* Language dropdown styling (dark theme) */
-.lang-menu {
-  background: #1b1b1b;
-  border: 1px solid rgba(255,255,255,0.10);
-  border-radius: 12px;
-  padding: 8px;
-  min-width: 60px;
+.lang-dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 2000;
 }
 
-.lang-menu .dropdown-item {
-  color: transparent;
-  letter-spacing: 0.12rem;
-  font-weight: 600;
-  padding: 10px 12px;
-  border-radius: 10px;
-}
-
-.lang-menu .dropdown-item:hover,
-.lang-menu .dropdown-item:focus {
-  background: rgba(255,255,255,0.06);
+.lang-current {
+  background: none;
+  border: none;
   color: #fff;
+  cursor: pointer;
+
+  font-size: 0.80rem;        /* match nav */
+  letter-spacing: 0.2em;     /* same spacing feel */
+  font-weight: 500;          /* same weight */
 }
 
-/* remove Bootstrap caret spacing weirdness if needed */
-.language-switch.dropdown-toggle::after {
-  margin-left: 8px;
-  opacity: 0.7;
+.lang-current i {
+  font-size: 0.7rem;
+  margin-left: 6px;
+  opacity: 0.8;
+  transition: transform 0.25s ease;
+  display: inline-block;
+}
+
+.lang-current.open i {
+  transform: rotate(180deg);
+}
+
+.lang-current .arrow {
+  font-size: 0.65rem;
+  margin-left: 4px;
+}
+
+.lang-menu {
+  position: absolute;
+  top: 120%;
+  right: 0;
+  min-width: 64px;
+  padding: 6px 0;
+  background: #111;
+  border: 1px solid rgba(255,255,255,0.1);
+  display: none;
+  z-index: 3000;
+}
+
+.lang-menu.show {
+  display: block;
+}
+
+.lang-item {
+  padding: 6px 12px;
+  color: #aaa;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+  text-align: center;
+}
+
+.lang-item:hover {
+  color: #fff;
+  background: rgba(255,255,255,0.05);
 }
 
 /* ============== FOOTER =====================*/
@@ -982,4 +1049,41 @@ body.modal-open {
 
 .footer-link:hover {
   color: rgba(255, 255, 255, 0.164);
+}
+
+.hero-link {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero-subtitle {
+  margin: 0;
+  color: #ddd;
+}
+
+.hero-cta {
+  margin-top: 12px;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ccc;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  opacity: 0.85;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.hero-cta i {
+  font-size: 1rem;
+}
+
+.hero-link:hover .hero-cta {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+.hero-link:hover h1 {
+  opacity: 0.95;
 }

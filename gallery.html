@@ -40,13 +40,25 @@
     <div class="flex-grow-1"></div>
 
     <!-- Desktop Menu -->
-      <div class="nav-menu d-none d-lg-flex gap-4 align-items-center">
-        <a href="profile.html">PROFILE</a>
-        <a href="discography.html">DISCOGRAPHY</a>
-        <a href="gallery.html">GALLERY</a>
-        <a href="video.html">VIDEO</a>
-        <a href="archive.html">ARCHIVE</a>
+      <div class="nav-menu d-none d-lg-flex gap-4 align-items-center pe-2">
+        <a href="profile.html" class="js-lang-link">PROFILE</a>
+        <a href="discography.html" class="js-lang-link">DISCOGRAPHY</a>
+        <a href="gallery.html" class="js-lang-link">GALLERY</a>
+        <a href="video.html" class="js-lang-link">VIDEO</a>
+        <a href="archive.html" class="js-lang-link">ARCHIVE</a>
       </div>
+
+    <!-- Trans toggle -->
+    <div class="lang-dropdown ms-4 pe-3">
+      <button class="lang-current" id="langToggle" type="button">
+        KR <i class="bi bi-caret-down-fill"></i>
+      </button>
+
+      <div class="lang-menu" id="langMenu">
+        <div class="lang-item" data-lang="kr">KR</div>
+        <div class="lang-item" data-lang="en">EN</div>
+      </div>
+    </div>
 
     <!-- Mobile Hamburger -->
     <button class="menu-toggle d-lg-none" type="button"
@@ -83,11 +95,11 @@
 
   <div class="offcanvas-body d-flex flex-column justify-content-center align-items-center text-center">
 
-        <a href="profile.html">PROFILE</a>
-        <a href="discography.html">DISCOGRAPHY</a>
-        <a href="gallery.html">GALLERY</a>
-        <a href="video.html">VIDEO</a>
-        <a href="archive.html">ARCHIVE</a>
+        <a href="profile.html" class="js-lang-link">PROFILE</a>
+        <a href="discography.html" class="js-lang-link">DISCOGRAPHY</a>
+        <a href="gallery.html" class="js-lang-link">GALLERY</a>
+        <a href="video.html" class="js-lang-link">VIDEO</a>
+        <a href="archive.html" class="js-lang-link">ARCHIVE</a>
 
     <!-- Mobile Social -->
     <div class="d-flex justify-content-center gap-5">
