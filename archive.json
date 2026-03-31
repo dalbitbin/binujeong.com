@@ -1,20 +1,20 @@
 [
   {
-  “date”: “2026-04-01”,
-  “type”: “anniversary”,
-  “era”: “solo”,
-  “title_kr”: “틱톡 1년”,
-  “title_en”: “TikTok 1 Year”,
-  “link”: “”
-},
-{
-  “date”: “2026-04-01”,
-  “type”: “woobin”,
-  “era”: “solo”,
-  “title_kr”: “우빈 생일 🎂”,
-  “title_en”: “Woobin’s Birthday! 🎂”,
-  “link”: “”
-},
+    "date": "2026-04-01",
+    "type": "anniversary",
+    "era": "solo",
+    "title_kr": "틱톡 1년",
+    "title_en": "TikTok 1 Year",
+    "link": ""
+  },
+  {
+    "date": "2026-04-01",
+    "type": "woobin",
+    "era": "solo",
+    "title_kr": "우빈 생일 🎂",
+    "title_en": "Woobin's Birthday! 🎂",
+    "link": ""
+  },
   {
   "date": "2025-09-11",
   "type": "woobin",
