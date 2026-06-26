@@ -1,5 +1,13 @@
 [
-    {
+  {
+    "date": "2026-06-27",
+    "type": "woobin",
+    "era": "solo",
+    "title_kr": "신촌 버스킹",
+    "title_en": "Sinchon Busking",
+    "link": ""
+  },
+  {
     "date": "2026-06-02",
     "type": "anniversary",
     "era": "solo",
