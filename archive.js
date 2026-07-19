@@ -1,4 +1,4 @@
-// ===================== ARCHIVE.JS (archive.json + tiktoklive.json) =====================
+// ===================== ARCHIVE.JS (archive.json + archive_legend_tiktok_liveiktoklive.json) =====================
 
 // Containers
 const TIMELINE_SOLO = document.getElementById("timeline-solo");
