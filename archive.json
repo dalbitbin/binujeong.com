@@ -1,5 +1,21 @@
 [
+  {
+    "date": "2026-09-09",
+    "type": "anniversary",
+    "era": "luminous",
+    "title_kr": "루미너스 데뷔 5주년",
+    "title_en": "Luminous 5 Years Anniversary",
+    "link": ""
+  },
     {
+    "date": "2026-09-08",
+    "type": "anniversary",
+    "era": "solo",
+    "title_kr": "솔로 데뷔 300일",
+    "title_en": "Solo Debut 300 Days",
+    "link": ""
+  },
+  {
     "date": "2026-08-14",
     "type": "anniversary",
     "era": "solo",
@@ -20,7 +36,7 @@
     "type": "anniversary",
     "era": "solo",
     "title_kr": "솔로 데뷔 200일",
-    "title_en": "Solo debut 200 days",
+    "title_en": "Solo Debut 200 days",
     "link": ""
   },
   {
